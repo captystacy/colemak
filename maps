@@ -48,7 +48,7 @@ map I goForward
 map g createTab
 map N previousTab
 map dG previousTab
-map K nextTab
+map E nextTab
 map dg nextTab
 map ^ visitPreviousTab
 map d0 firstTab
