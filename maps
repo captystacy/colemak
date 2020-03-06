@@ -1,0 +1,67 @@
+unmapAll
+
+# Navigating the page
+
+map n scrollDown
+map <c-f> scrollDown
+map e scrollUp
+map <c-j> scrollUp
+map dd scrollToTop
+map D scrollToBottom
+map s scrollPageDown
+map l scrollPageUp
+map - scrollFullPageDown
+map - scrollFullPageUp
+map h scrollLeft
+map i scrollRight
+map p reload
+map jj copyCurrentUrl
+map ; openCopiedUrlInCurrentTab
+map : openCopiedUrlInNewTab
+map u enterInsertMode
+map v enterVisualMode
+map du focusInput
+map t LinkHints.activateMode
+map T LinkHints.activateModeToOpenInNewTab
+map - LinkHints.activateModeToOpenInNewForegroundTab
+map dt nextFrame
+map dT mainFrame
+
+# Using the vomnibar
+
+map y Vomnibar.activate
+map Y Vomnibar.activateInNewTab
+map b Vomnibar.activateBookmarks
+map B Vomnibar.activateBookmarksInNewTab
+map G Vomnibar.activateTabSelection
+map - enterFindMode
+map k performFind
+map K performBackwardsFind
+
+# Navigating history
+
+map H goBack
+map I goForward
+
+# Manipulating tabs
+
+map g createTab
+map N previousTab
+map dG previousTab
+map K nextTab
+map dg nextTab
+map ^ visitPreviousTab
+map d0 firstTab
+map d$ lastTab
+map jg duplicateTab
+map <a-;> togglePinTab
+map <a-m> toggleMuteTab
+map x removeTab
+map X restoreTab
+
+# Miscellaneous
+
+map ? showHelp
+
+
+rastneifwcm;dh
