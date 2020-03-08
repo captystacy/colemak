@@ -1,18 +1,16 @@
+nnoremap f e
+nnoremap p r
+nnoremap g t
+nnoremap j y
+nnoremap l u
+nnoremap u i
+nnoremap y o
+nnoremap ; p
+nnoremap r s
+nnoremap s d
+nnoreamp d g
 nnoremap n j
 nnoremap e k
 nnoremap i l
-nnoremap u i
-nnoremap l u
+nnoremap o ;
 nnoremap k n
-nnoremap K N
-
-vnoremap n j
-vnoremap e k
-vnoremap i l
-
-set ignorecase
-
-set surround
-set number
-set relativenumber
-set incsearch
