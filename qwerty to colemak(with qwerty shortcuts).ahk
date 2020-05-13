@@ -43,6 +43,7 @@ n::k
 ;.::v ;no change
 ;/::z ;no change
 CapsLock::Backspace
+Backspace::CapsLock
 
 ;----------- RELEASE KEYS FROM REMAP WHEN MODIFIER DOWN
 
@@ -90,4 +91,6 @@ Hotkey, *Alt, toggle
 Hotkey, *Alt up, toggle
 Hotkey, *LWin, toggle
 Hotkey, *LWin up, toggle
+return
+
 ;END CODE
