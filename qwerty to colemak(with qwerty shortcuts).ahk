@@ -43,7 +43,6 @@ n::k
 ;.::v ;no change
 ;/::z ;no change
 CapsLock::Backspace
-Backspace::CapsLock
 
 ;----------- RELEASE KEYS FROM REMAP WHEN MODIFIER DOWN
 
@@ -69,17 +68,6 @@ SetKeyDelay -1
 Send {Blind}{Alt Up}
 return
 
-*LWin::
-SetKeyDelay -1
-Send {Blind}{LWin DownTemp}
-Suspend On
-return
-*LWin up::
-Suspend Off
-SetKeyDelay -1
-Send {Blind}{LWin Up}
-return
-
 ;----------- TOGGLE COLEMARK-QWERTY WITH RIGHT ALT KEY
 
 *RAlt::
@@ -89,8 +77,37 @@ Hotkey, *Ctrl, toggle
 Hotkey, *Ctrl up, toggle
 Hotkey, *Alt, toggle
 Hotkey, *Alt up, toggle
-Hotkey, *LWin, toggle
-Hotkey, *LWin up, toggle
+return
+
+;----------- SWITCHING TO NORMAL RUSSIAN WITH USELESS KEY WIN(left)
+$LWin::
+Suspend, Permit
+Suspend, toggle
+Hotkey, *Ctrl, toggle
+Hotkey, *Ctrl up, toggle
+Hotkey, *Alt, toggle
+Hotkey, *Alt up, toggle
+V++
+M:=mod(V,2)
+if M=1
+   SetDefaultKeyboard(0x0419) ; Russian
+else
+   SetDefaultKeyboard(0x0409) ; english-US
+return
+
+SetDefaultKeyboard(LocaleID){
+	Global
+	SPI_SETDEFAULTINPUTLANG := 0x005A
+	SPIF_SENDWININICHANGE := 2
+	Lan := DllCall("LoadKeyboardLayout", "Str", Format("{:08x}", LocaleID), "Int", 0)
+	VarSetCapacity(Lan%LocaleID%, 4, 0)
+	NumPut(LocaleID, Lan%LocaleID%)
+	DllCall("SystemParametersInfo", "UInt", SPI_SETDEFAULTINPUTLANG, "UInt", 0, "UPtr", &Lan%LocaleID%, "UInt", SPIF_SENDWININICHANGE)
+	WinGet, windows, List
+	Loop %windows% {
+		PostMessage 0x50, 0, %Lan%, , % "ahk_id " windows%A_Index%
+	}
+}
 return
 
 ;END CODE
