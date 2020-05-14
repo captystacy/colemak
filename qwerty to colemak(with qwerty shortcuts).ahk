@@ -57,17 +57,6 @@ SetKeyDelay -1
 Send {Blind}{Ctrl Up}
 return
 
-*Alt::
-SetKeyDelay -1
-Send {Blind}{Alt DownTemp}
-Suspend On
-return
-*Alt up::
-Suspend Off
-SetKeyDelay -1
-Send {Blind}{Alt Up}
-return
-
 ;----------- TOGGLE COLEMARK-QWERTY WITH RIGHT ALT KEY
 
 *RAlt::
@@ -75,8 +64,6 @@ Suspend, Permit
 Suspend, toggle
 Hotkey, *Ctrl, toggle
 Hotkey, *Ctrl up, toggle
-Hotkey, *Alt, toggle
-Hotkey, *Alt up, toggle
 return
 
 ;----------- SWITCHING TO NORMAL RUSSIAN WITH USELESS KEY WIN(left)(DONT COMPRESS!!!)
@@ -86,8 +73,6 @@ Suspend, Permit
 Suspend, toggle
 Hotkey, *Ctrl, toggle
 Hotkey, *Ctrl up, toggle
-Hotkey, *Alt, toggle
-Hotkey, *Alt up, toggle
 
 INPUTLANGCHANGE_FORWARD := 0x2
 WM_INPUTLANGCHANGEREQUEST := 0x0050
