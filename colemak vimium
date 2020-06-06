@@ -65,6 +65,4 @@ map ? showHelp
 
 map  , showHelp
 
-map <c-c> exitMode
-
 rastneifwcm;dh
