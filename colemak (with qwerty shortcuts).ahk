@@ -51,7 +51,7 @@ Hotkey, *Ctrl, toggle
 Hotkey, *Ctrl up, toggle
 return
 
-;----------- SWITCHING TO NORMAL RUSSIAN WITH USELESS KEY WIN(left)(DONT COMPRESS!!!)
+;----------- SWITCHING TO NORMAL RUSSIAN WITH USELESS KEY WIN(left)
 
 *LWin::
 Suspend, Permit
