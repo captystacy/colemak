@@ -26,7 +26,6 @@ l::i
 SC027::o
 
 n::k
-
 CapsLock::Backspace
 
 ;----------- RELEASE KEYS FROM REMAP WHEN MODIFIER DOWN
@@ -51,9 +50,9 @@ Hotkey, *Ctrl, toggle
 Hotkey, *Ctrl up, toggle
 return
 
-;----------- SWITCHING TO NORMAL RUSSIAN WITH USELESS KEY WIN(left)
+;----------- SWITCHING TO NORMAL NATIVE WITH WIN+SPACE
 
-*LWin::
+*#Space::
 Suspend, Permit
 Suspend, toggle
 Hotkey, *Ctrl, toggle
