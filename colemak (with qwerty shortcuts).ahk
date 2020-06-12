@@ -50,9 +50,9 @@ Hotkey, *Ctrl, toggle
 Hotkey, *Ctrl up, toggle
 return
 
-;----------- SWITCHING TO NORMAL NATIVE WITH WIN+SPACE
+;----------- SWITCHING TO NORMAL NATIVE WITH LWIN
 
-*#Space::
+*LWin::
 Suspend, Permit
 Suspend, toggle
 Hotkey, *Ctrl, toggle
