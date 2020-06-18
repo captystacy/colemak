@@ -1,19 +1,19 @@
 " Up/down/left/right {{{
-    noremap h h
-    noremap n j
-    noremap e k
-    noremap i l
+    noremap h h|
+    noremap n j|
+    noremap e k|
+    noremap i l|
 " }}}
 " Words forward/backward {{{
     " l/L = back word/WORD
     " u/U = end of word/WORD
     " y/Y = forward word/WORD
-    noremap l b
-    noremap L B
-    noremap u e
-    noremap U E
-    noremap y w
-    noremap Y W
+    noremap l b|
+    noremap L B|
+    noremap u e|
+    noremap U E|
+    noremap y w|
+    noremap Y W|
 " }}}
 " inSert/Replace/append (T) {{{
     nnoremap s i|
@@ -22,7 +22,7 @@
     nnoremap T A|
 " }}}
 " Change {{{
-    noremap w c
+    noremap w c|
     nnoremap W C|xnoremap W C|
     nnoremap ww cc|
 " }}}
