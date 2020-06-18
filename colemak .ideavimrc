@@ -41,12 +41,12 @@ noremap <silent> <expr> S (mode() =~# "[V]" ? "\<C-V>0o$I" : "I")
 noremap <silent> <expr> t (mode() =~# "[V]" ? "\<C-V>0o$A" : "A")
 noremap <silent> <expr> T (mode() =~# "[V]" ? "\<C-V>0o$A" : "A")
 
-noremap p t|noremap p t|noremap p t|
-noremap P T|noremap P T|noremap P T|
-noremap b ;|noremap b ;|noremap b ;|
-noremap B ,|noremap B ,|noremap B ,|
-noremap k n|noremap k n|noremap k n|
-noremap K N|noremap K N|noremap K N|
+noremap p t
+noremap P T
+noremap b ;
+noremap B ,
+noremap k n
+noremap K N
 
 noremap r i
 
