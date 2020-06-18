@@ -42,7 +42,7 @@
     nnoremap Z <C-R>|xnoremap Z :<C-U>redo<CR>|
 " }}}
 " Visual mode {{{
-    noremap a v
+    noremap a v|
     nnoremap A V|xnoremap A V|
     nnoremap ga gv
     " Make insert/add work also in visual line mode like in visual block mode
