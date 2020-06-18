@@ -28,9 +28,9 @@ noremap V P
 noremap gv gp
 noremap gV gP
 
-noremap z u
-noremap gz U
-noremap Z <C-R>
+noremap z u|noremap z :<C-U>undo<CR>|
+noremap gz U|noremap gz :<C-U>undo<CR>|
+noremap Z <C-R>|noremap Z :<C-U>redo<CR>|
 
 noremap a v
 noremap A V
