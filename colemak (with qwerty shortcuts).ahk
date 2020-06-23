@@ -35,10 +35,23 @@ SetKeyDelay -1
 Send {Blind}{Ctrl DownTemp}
 Suspend On
 return
+
 *Ctrl up::
 Suspend Off
 SetKeyDelay -1
 Send {Blind}{Ctrl Up}
+return
+
+*LWin::
+SetKeyDelay -1
+Send {Blind}{LWin DownTemp}
+Suspend On
+return
+
+*LWin up::
+Suspend Off
+SetKeyDelay -1
+Send {Blind}{LWin Up}
 return
 
 ;----------- TOGGLE COLEMARK-QWERTY WITH RIGHT ALT KEY
@@ -50,14 +63,18 @@ Hotkey, *Ctrl, toggle
 Hotkey, *Ctrl up, toggle
 return
 
-;----------- SWITCHING TO NORMAL NATIVE WITH LWIN
+;----------- SWITCHING TO NORMAL NATIVE WITH LALT & LSHIFT
 
-*LWin::
+LAlt & LShift::
 Suspend, Permit
 Suspend, toggle
 Hotkey, *Ctrl, toggle
 Hotkey, *Ctrl up, toggle
 PostMessage, 0x50, 2, 0,, A ; 0x50 is WM_INPUTLANGCHANGEREQUEST
 return
+
+;----------- WINDOW ALWAYS ON TOP
+
+!SPACE:: Winset, Alwaysontop, , A
 
 ;END CODE
