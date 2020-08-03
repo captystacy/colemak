@@ -30,13 +30,13 @@ CapsLock::Backspace
 
 ;----------- RELEASE KEYS FROM REMAP WHEN MODIFIER DOWN
 
-*LCtrl::
+*Ctrl::
 SetKeyDelay -1
 Send {Blind}{Ctrl DownTemp}
 Suspend On
 return
 
-*LCtrl up::
+*Ctrl up::
 Suspend Off
 SetKeyDelay -1
 Send {Blind}{Ctrl Up}
