@@ -30,13 +30,13 @@ CapsLock::Backspace
 
 ;----------- RELEASE KEYS FROM REMAP WHEN MODIFIER DOWN
 
-*Ctrl::
+*LCtrl::
 SetKeyDelay -1
 Send {Blind}{Ctrl DownTemp}
 Suspend On
 return
 
-*Ctrl up::
+*LCtrl up::
 Suspend Off
 SetKeyDelay -1
 Send {Blind}{Ctrl Up}
@@ -68,8 +68,8 @@ return
 LAlt & LShift::
 Suspend, Permit
 Suspend, toggle
-Hotkey, *Ctrl, toggle
-Hotkey, *Ctrl up, toggle
+Hotkey, *LCtrl, toggle
+Hotkey, *LCtrl up, toggle
 PostMessage, 0x50, 2, 0,, A ; 0x50 is WM_INPUTLANGCHANGEREQUEST
 return
 
