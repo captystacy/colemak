@@ -1,5 +1,5 @@
 set noerrorbells visualbell t_vb=
-set relativenumber
+set nu rnu
 " Up/down/left/right {{{
     nnoremap h h
     xnoremap h h
