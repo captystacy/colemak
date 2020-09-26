@@ -34,7 +34,7 @@ map Y Vomnibar.activateInNewTab
 map b Vomnibar.activateBookmarks
 map B Vomnibar.activateBookmarksInNewTab
 map G Vomnibar.activateTabSelection
-map - enterFindMode
+map / enterFindMode
 map k performFind
 map K performBackwardsFind
 
@@ -62,8 +62,6 @@ map X restoreTab
 # Miscellaneous
 
 map ? showHelp
-
-map  , showHelp
 
 map  о scrollDown
 map  л scrollUp
@@ -94,7 +92,6 @@ map  а LinkHints.activateMode
 map  А LinkHints.activateModeToOpenInNewTab
 map  <a-а> LinkHints.activateModeWithQueue
 
-map  . enterFindMode
 map  т performFind
 map  Т performBackwardsFind
 
