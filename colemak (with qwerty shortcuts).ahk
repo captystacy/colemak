@@ -72,9 +72,3 @@ Hotkey, *LCtrl, toggle
 Hotkey, *LCtrl up, toggle
 PostMessage, 0x50, 2, 0,, A ; 0x50 is WM_INPUTLANGCHANGEREQUEST
 return
-
-;----------- WINDOW ALWAYS ON TOP
-
-!SPACE:: Winset, Alwaysontop, , A
-
-;END CODE
