@@ -1,5 +1,4 @@
 ^j::send {Down}
-^u::send {Up}
 
 XButton2::
 {
