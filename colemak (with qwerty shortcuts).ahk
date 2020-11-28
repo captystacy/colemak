@@ -14,7 +14,6 @@ u::l
 i::u
 o::y
 p::;
-
 s::r
 d::s
 f::t
@@ -24,10 +23,9 @@ j::n
 k::e
 l::i
 SC027::o
-
 n::k
-CapsLock::Backspace
 
+Capslock::Backspace
 ;----------- RELEASE KEYS FROM REMAP WHEN MODIFIER DOWN
 
 *LCtrl::
@@ -59,8 +57,10 @@ return
 *RAlt::
 Suspend, Permit
 Suspend, toggle
-Hotkey, *Ctrl, toggle
-Hotkey, *Ctrl up, toggle
+Hotkey, *LCtrl, toggle
+Hotkey, *LCtrl up, toggle
+Hotkey, *LWin, toggle
+Hotkey, *LWin up, toggle
 return
 
 ;----------- SWITCHING TO NORMAL NATIVE WITH LALT & LSHIFT
@@ -70,5 +70,12 @@ Suspend, Permit
 Suspend, toggle
 Hotkey, *LCtrl, toggle
 Hotkey, *LCtrl up, toggle
+Hotkey, *LWin, toggle
+Hotkey, *LWin up, toggle
 PostMessage, 0x50, 2, 0,, A ; 0x50 is WM_INPUTLANGCHANGEREQUEST
 return
+
+!j::send {Down}
+!k::send {Up}
+!h::send {Left}
+!l::send {Right}
