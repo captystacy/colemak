@@ -35,6 +35,8 @@ map b Vomnibar.activateBookmarks
 map B Vomnibar.activateBookmarksInNewTab
 map G Vomnibar.activateTabSelection
 map / enterFindMode
+map . enterFindMode
+
 map k performFind
 map K performBackwardsFind
 
