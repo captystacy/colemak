@@ -28,13 +28,13 @@ n::k
 Capslock::Backspace
 ;----------- RELEASE KEYS FROM REMAP WHEN MODIFIER DOWN
 
-*LCtrl::
+*Ctrl::
 SetKeyDelay -1
 Send {Blind}{Ctrl DownTemp}
 Suspend On
 return
 
-*LCtrl up::
+*Ctrl up::
 Suspend Off
 SetKeyDelay -1
 Send {Blind}{Ctrl Up}
@@ -54,11 +54,12 @@ return
 
 ;----------- TOGGLE COLEMARK-QWERTY WITH RIGHT ALT KEY
 
-*RAlt::
+*Home::
 Suspend, Permit
 Suspend, toggle
-Hotkey, *LCtrl, toggle
-Hotkey, *LCtrl up, toggle
+Hotkey, *Ctrl, toggle
+Hotkey, *Ctrl up, toggle
+
 return
 
 ;----------- SWITCHING TO NORMAL NATIVE WITH LALT & LSHIFT
@@ -66,8 +67,8 @@ return
 LAlt & LShift::
 Suspend, Permit
 Suspend, toggle
-Hotkey, *LCtrl, toggle
-Hotkey, *LCtrl up, toggle
+Hotkey, *Ctrl, toggle
+Hotkey, *Ctrl up, toggle
 PostMessage, 0x50, 2, 0,, A ; 0x50 is WM_INPUTLANGCHANGEREQUEST
 return
 
