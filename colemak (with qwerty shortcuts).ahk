@@ -57,6 +57,10 @@ return
 *Home::
 Suspend, Permit
 Suspend, toggle
+Hotkey, *Ctrl, toggle
+Hotkey, *Ctrl up, toggle
+Hotkey, *LWin, toggle
+Hotkey, *LWin up, toggle
 return
 
 ;----------- SWITCHING TO NORMAL NATIVE WITH LALT & LSHIFT
@@ -64,6 +68,10 @@ return
 LAlt & LShift::
 Suspend, Permit
 Suspend, toggle
+Hotkey, *Ctrl, toggle
+Hotkey, *Ctrl up, toggle
+Hotkey, *LWin, toggle
+Hotkey, *LWin up, toggle
 PostMessage, 0x50, 2, 0,, A ; 0x50 is WM_INPUTLANGCHANGEREQUEST
 return
 
