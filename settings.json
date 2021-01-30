@@ -1,0 +1,843 @@
+{
+  "editor.fontSize": 20,
+  "vim.useCtrlKeys": false,
+  "vim.normalModeKeyBindingsNonRecursive": [
+    
+    {
+      "before": [
+        "h"
+      ],
+      "after": [
+        "h"
+      ]
+    },
+    {
+      "before": [
+        "n"
+      ],
+      "after": [
+        "j"
+      ]
+    },
+    {
+      "before": [
+        "e"
+      ],
+      "after": [
+        "k"
+      ]
+    },
+    {
+      "before": [
+        "i"
+      ],
+      "after": [
+        "l"
+      ]
+    },
+    {
+      "before": [
+        "l"
+      ],
+      "after": [
+        "b"
+      ]
+    },
+    {
+      "before": [
+        "l"
+      ],
+      "after": [
+        "b"
+      ]
+    },
+    {
+      "before": [
+        "L"
+      ],
+      "after": [
+        "B"
+      ]
+    },
+    {
+      "before": [
+        "u"
+      ],
+      "after": [
+        "e"
+      ]
+    },
+    {
+      "before": [
+        "U"
+      ],
+      "after": [
+        "E"
+      ]
+    },
+    {
+      "before": [
+        "y"
+      ],
+      "after": [
+        "w"
+      ]
+    },
+    {
+      "before": [
+        "Y"
+      ],
+      "after": [
+        "W"
+      ]
+    },
+    {
+      "before": [
+        "s"
+      ],
+      "after": [
+        "i"
+      ]
+    },
+    {
+      "before": [
+        "S"
+      ],
+      "after": [
+        "I"
+      ]
+    },
+    {
+      "before": [
+        "t"
+      ],
+      "after": [
+        "a"
+      ]
+    },
+    {
+      "before": [
+        "T"
+      ],
+      "after": [
+        "A"
+      ]
+    },
+    {
+      "before": [
+        "w"
+      ],
+      "after": [
+        "c"
+      ]
+    },
+    {
+      "before": [
+        "W"
+      ],
+      "after": [
+        "C"
+      ]
+    },
+    {
+      "before": [
+        "w",
+        "w"
+      ],
+      "after": [
+        "c",
+        "c"
+      ]
+    },
+    {
+      "before": [
+        "x"
+      ],
+      "after": [
+        "x"
+      ]
+    },
+    {
+      "before": [
+        "c"
+      ],
+      "after": [
+        "y"
+      ]
+    },
+    {
+      "before": [
+        "v"
+      ],
+      "after": [
+        "p"
+      ]
+    },
+    {
+      "before": [
+        "X"
+      ],
+      "after": [
+        "d",
+        "d"
+      ]
+    },
+    {
+      "before": [
+        "C"
+      ],
+      "after": [
+        "y",
+        "y"
+      ]
+    },
+    {
+      "before": [
+        "V"
+      ],
+      "after": [
+        "P"
+      ]
+    },
+    {
+      "before": [
+        "g",
+        "v"
+      ],
+      "after": [
+        "g",
+        "p"
+      ]
+    },
+    {
+      "before": [
+        "g",
+        "V"
+      ],
+      "after": [
+        "g",
+        "P"
+      ]
+    },
+    {
+      "before": [
+        "z"
+      ],
+      "after": [
+        "u"
+      ]
+    },
+    {
+      "before": [
+        "g",
+        "z"
+      ],
+      "after": [
+        "U"
+      ]
+    },
+    {
+      "before": [
+        "Z"
+      ],
+      "after": [
+        "<C-R>"
+      ]
+    },
+    {
+      "before": [
+        "a"
+      ],
+      "after": [
+        "v"
+      ]
+    },
+    {
+      "before": [
+        "A"
+      ],
+      "after": [
+        "V"
+      ]
+    },
+    {
+      "before": [
+        "g",
+        "a"
+      ],
+      "after": [
+        "g",
+        "v"
+      ]
+    },
+    {
+      "before": [
+        "p"
+      ],
+      "after": [
+        "t"
+      ]
+    },
+    {
+      "before": [
+        "P"
+      ],
+      "after": [
+        "T"
+      ]
+    },
+    {
+      "before": [
+        "b"
+      ],
+      "after": [
+        ";"
+      ]
+    },
+    {
+      "before": [
+        "B"
+      ],
+      "after": [
+        ","
+      ]
+    },
+    {
+      "before": [
+        "k"
+      ],
+      "after": [
+        "n"
+      ]
+    },
+    {
+      "before": [
+        "K"
+      ],
+      "after": [
+        "N"
+      ]
+    },
+    {
+      "before": [
+        "j"
+      ],
+      "after": [
+        "z"
+      ]
+    },
+    {
+      "before": [
+        "j",
+        "n"
+      ],
+      "after": [
+        "z",
+        "j"
+      ]
+    },
+    {
+      "before": [
+        "j",
+        "e"
+      ],
+      "after": [
+        "z",
+        "k"
+      ]
+    },
+    {
+      "before": [
+        "g",
+        "X"
+      ],
+      "after": [
+        "X"
+      ]
+    },
+    {
+      "before": [
+        "g",
+        "K"
+      ],
+      "after": [
+        "K"
+      ]
+    },
+    {
+      "before": [
+        "g",
+        "L"
+      ],
+      "after": [
+        "L"
+      ]
+    },
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "h"
+      ],
+      "after": [
+        "h"
+      ]
+    },
+    {
+      "before": [
+        "n"
+      ],
+      "after": [
+        "j"
+      ]
+    },
+    {
+      "before": [
+        "e"
+      ],
+      "after": [
+        "k"
+      ]
+    },
+    {
+      "before": [
+        "i"
+      ],
+      "after": [
+        "l"
+      ]
+    },
+    {
+      "before": [
+        "l"
+      ],
+      "after": [
+        "b"
+      ]
+    },
+    {
+      "before": [
+        "L"
+      ],
+      "after": [
+        "B"
+      ]
+    },
+    {
+      "before": [
+        "u"
+      ],
+      "after": [
+        "e"
+      ]
+    },
+    {
+      "before": [
+        "U"
+      ],
+      "after": [
+        "E"
+      ]
+    },
+    {
+      "before": [
+        "y"
+      ],
+      "after": [
+        "w"
+      ]
+    },
+    {
+      "before": [
+        "Y"
+      ],
+      "after": [
+        "W"
+      ]
+    },
+    {
+      "before": [
+        "w"
+      ],
+      "after": [
+        "c"
+      ]
+    },
+    {
+      "before": [
+        "W"
+      ],
+      "after": [
+        "C"
+      ]
+    },
+    {
+      "before": [
+        "x"
+      ],
+      "after": [
+        "d"
+      ]
+    },
+    {
+      "before": [
+        "c"
+      ],
+      "after": [
+        "y"
+      ]
+    },
+    {
+      "before": [
+        "v"
+      ],
+      "after": [
+        "p"
+      ]
+    },
+    {
+      "before": [
+        "X"
+      ],
+      "after": [
+        "d"
+      ]
+    },
+    {
+      "before": [
+        "C"
+      ],
+      "after": [
+        "y"
+      ]
+    },
+    {
+      "before": [
+        "V"
+      ],
+      "after": [
+        "P"
+      ]
+    },
+    {
+      "before": [
+        "g",
+        "v"
+      ],
+      "after": [
+        "g",
+        "p"
+      ]
+    },
+    {
+      "before": [
+        "g",
+        "V"
+      ],
+      "after": [
+        "g",
+        "P"
+      ]
+    },
+    {
+      "before": [
+        "a"
+      ],
+      "after": [
+        "v"
+      ]
+    },
+    {
+      "before": [
+        "A"
+      ],
+      "after": [
+        "V"
+      ]
+    },
+    {
+      "before": [
+        "p"
+      ],
+      "after": [
+        "t"
+      ]
+    },
+    {
+      "before": [
+        "P"
+      ],
+      "after": [
+        "T"
+      ]
+    },
+    {
+      "before": [
+        "b"
+      ],
+      "after": [
+        ";"
+      ]
+    },
+    {
+      "before": [
+        "B"
+      ],
+      "after": [
+        ","
+      ]
+    },
+    {
+      "before": [
+        "k"
+      ],
+      "after": [
+        "n"
+      ]
+    },
+    {
+      "before": [
+        "K"
+      ],
+      "after": [
+        "N"
+      ]
+    },
+    {
+      "before": [
+        "j"
+      ],
+      "after": [
+        "z"
+      ]
+    },
+    {
+      "before": [
+        "j",
+        "n"
+      ],
+      "after": [
+        "z",
+        "j"
+      ]
+    },
+    {
+      "before": [
+        "j",
+        "e"
+      ],
+      "after": [
+        "z",
+        "k"
+      ]
+    },
+    {
+      "before": [
+        "g",
+        "X"
+      ],
+      "after": [
+        "X"
+      ]
+    },
+    {
+      "before": [
+        "g",
+        "K"
+      ],
+      "after": [
+        "K"
+      ]
+    },
+    {
+      "before": [
+        "g",
+        "L"
+      ],
+      "after": [
+        "L"
+      ]
+    },
+    {
+      "before": [
+        "z"
+      ],
+      "after": [
+        ":<C-U>undo<CR>"
+      ]
+    },
+    {
+      "before": [
+        "g",
+        "z"
+      ],
+      "after": [
+        ":<C-U>undo<CR>"
+      ]
+    },
+    {
+      "before": [
+        "Z"
+      ],
+      "after": [
+        ":<C-U>redo<CR>"
+      ]
+    },
+  ],
+  "vim.operatorPendingModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "h"
+      ],
+      "after": [
+        "h"
+      ]
+    },
+    {
+      "before": [
+        "n"
+      ],
+      "after": [
+        "j"
+      ]
+    },
+    {
+      "before": [
+        "e"
+      ],
+      "after": [
+        "k"
+      ]
+    },
+    {
+      "before": [
+        "i"
+      ],
+      "after": [
+        "l"
+      ]
+    },
+    {
+      "before": [
+        "l"
+      ],
+      "after": [
+        "b"
+      ]
+    },
+    {
+      "before": [
+        "L"
+      ],
+      "after": [
+        "B"
+      ]
+    },
+    {
+      "before": [
+        "u"
+      ],
+      "after": [
+        "e"
+      ]
+    },
+    {
+      "before": [
+        "U"
+      ],
+      "after": [
+        "E"
+      ]
+    },
+    {
+      "before": [
+        "y"
+      ],
+      "after": [
+        "w"
+      ]
+    },
+    {
+      "before": [
+        "Y"
+      ],
+      "after": [
+        "W"
+      ]
+    },
+    {
+      "before": [
+        "p"
+      ],
+      "after": [
+        "t"
+      ]
+    },
+    {
+      "before": [
+        "P"
+      ],
+      "after": [
+        "T"
+      ]
+    },
+    {
+      "before": [
+        "b"
+      ],
+      "after": [
+        ";"
+      ]
+    },
+    {
+      "before": [
+        "B"
+      ],
+      "after": [
+        ","
+      ]
+    },
+    {
+      "before": [
+        "k"
+      ],
+      "after": [
+        "n"
+      ]
+    },
+    {
+      "before": [
+        "K"
+      ],
+      "after": [
+        "N"
+      ]
+    },
+    {
+      "before": [
+        "r"
+      ],
+      "after": [
+        "i"
+      ]
+    },
+  ],
+  "vim.commandLineModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "<C-L>"
+      ],
+      "after": [
+        "<C-Left>"
+      ]
+    },
+    {
+      "before": [
+        "<C-Y>"
+      ],
+      "after": [
+        "<C-Right>"
+      ]
+    },
+  ]
+}
