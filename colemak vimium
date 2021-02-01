@@ -3,9 +3,7 @@ unmapAll
 # Navigating the page
 
 map n scrollDown
-map <c-f> scrollDown
 map e scrollUp
-map <c-j> scrollUp
 map dd scrollToTop
 map D scrollToBottom
 map s scrollPageDown
@@ -73,8 +71,6 @@ map  пп scrollToTop
 map  П scrollToBottom
 map  яР scrollToLeft
 map  яД scrollToRight
-map  <с-у> scrollDown
-map  <с-н> scrollUp
 
 map  в scrollPageDown
 map  г scrollPageUp
