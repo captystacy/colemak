@@ -1,5 +1,8 @@
-set noerrorbells visualbell t_vb=
+
 set nu rnu
+
+imap nn <Esc>
+
 " Up/down/left/right {{{
     nnoremap h h
     xnoremap h h
@@ -116,12 +119,12 @@ set nu rnu
     onoremap r i
 " }}}
 " Folds, etc. {{{
-    nnoremap j z
-    xnoremap j z
-    nnoremap jn zj
-    xnoremap jn zj
-    nnoremap je zk
-    xnoremap je zk
+"   nnoremap j z
+"   xnoremap j z
+"   nnoremap jn zj
+"   xnoremap jn zj
+"   nnoremap je zk
+"   xnoremap je zk
 " }}}
 " Overridden keys must be prefixed with g {{{
     nnoremap gX X
@@ -141,3 +144,5 @@ set nu rnu
     nnoremap <C-W>i <C-W>l
     xnoremap <C-W>i <C-W>l
 " }}}
+
+nnoremap j i<CR><Esc>
