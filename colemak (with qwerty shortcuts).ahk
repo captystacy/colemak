@@ -75,13 +75,21 @@ Hotkey, *LWin up, toggle
 PostMessage, 0x50, 2, 0,, A ; 0x50 is WM_INPUTLANGCHANGEREQUEST
 return
 
+LShift & LAlt::
+Suspend, Permit
+Suspend, toggle
+Hotkey, *Ctrl, toggle
+Hotkey, *Ctrl up, toggle
+Hotkey, *LWin, toggle
+Hotkey, *LWin up, toggle
+PostMessage, 0x50, 2, 0,, A ; 0x50 is WM_INPUTLANGCHANGEREQUEST
+return
+
 !j::send {Down}
 !k::send {Up}
 !h::send {Left}
 !l::send {Right}
 
-!u::send ^{Left}
-!o::send ^{Right}
+!u::send ^+{Left}
+!o::send ^+{Right}
 
-+!u::send ^+{Left}
-+!o::send ^+{Right}
