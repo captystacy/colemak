@@ -90,6 +90,8 @@ return
 !h::send {Left}
 !l::send {Right}
 
-!u::send ^+{Left}
-!o::send ^+{Right}
+!u::send ^{Left}
+!o::send ^{Right}
 
+!y::send +^{Left}
+!p::send +^{Right}
