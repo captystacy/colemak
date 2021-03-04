@@ -1,6 +1,3 @@
-
-set nu rnu
-
 imap nn <Esc>
 
 " Up/down/left/right {{{
@@ -145,4 +142,12 @@ imap nn <Esc>
     xnoremap <C-W>i <C-W>l
 " }}}
 
+"wrap
 nnoremap j i<CR><Esc>
+
+set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
+"indentation
+nnoremap <TAB> >>
+nnoremap <S-TAB> <<
+vnoremap <TAB> >gv
+vnoremap <S-TAB> <gv
