@@ -52,6 +52,18 @@ SetKeyDelay -1
 Send {Blind}{LWin Up}
 return
 
+*RWin::
+SetKeyDelay -1
+Send {Blind}{LWin DownTemp}
+Suspend On
+return
+
+*RWin up::
+Suspend Off
+SetKeyDelay -1
+Send {Blind}{LWin Up}
+return
+
 ;----------- TOGGLE COLEMARK-QWERTY WITH RIGHT ALT KEY
 
 *Home::
@@ -61,6 +73,8 @@ Hotkey, *Ctrl, toggle
 Hotkey, *Ctrl up, toggle
 Hotkey, *LWin, toggle
 Hotkey, *LWin up, toggle
+Hotkey, *RWin, toggle
+Hotkey, *RWin up, toggle
 return
 
 ;----------- SWITCHING TO NORMAL NATIVE WITH LALT & LSHIFT
@@ -93,5 +107,4 @@ return
 !u::send ^{Left}
 !o::send ^{Right}
 
-!y::send +^{Left}
-!p::send +^{Right}
+!i::send +^{Left}
