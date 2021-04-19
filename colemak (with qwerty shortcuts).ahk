@@ -108,3 +108,5 @@ return
 !o::send ^{Right}
 
 !i::send +^{Left}
+
+LAlt::
