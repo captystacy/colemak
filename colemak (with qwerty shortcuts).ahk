@@ -8,24 +8,24 @@ Menu, Tray, Icon, main.cpl, 8
 
 Capslock::Backspace
 #if GetKeyboardLayout() = "0x4090409" ;eng layout
-	$e::f
-	$r::p
-	$t::g
-	$y::j
-	$u::l
-	$i::u
-	$o::y
-	$p::;
-	$s::r
-	$d::s
-	$f::t
-	$g::d
-	$h::h
-	$j::n
-	$k::e
-	$l::i
-	$;::o
-	$n::k
+	e::f
+	r::p
+	t::g
+	y::j
+	u::l
+	i::u
+	o::y
+	p::;
+	s::r
+	d::s
+	f::t
+	g::d
+	h::h
+	j::n
+	k::e
+	l::i
+	SC027::o
+	n::k
 ;#if GetKeyboardLayout() = "0x4190419" ;rus layout
 #if
 
