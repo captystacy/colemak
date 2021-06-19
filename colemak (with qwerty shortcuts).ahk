@@ -86,7 +86,7 @@ Hotkey, *Ctrl, toggle
 Hotkey, *Ctrl up, toggle
 Hotkey, *LWin, toggle
 Hotkey, *LWin up, toggle
-PostMessage, 0x50, 2, 0,, A ; 0x50 is WM_INPUTLANGCHANGEREQUEST
+ChangeLanguage()
 return
 
 LShift & LAlt::
@@ -96,8 +96,14 @@ Hotkey, *Ctrl, toggle
 Hotkey, *Ctrl up, toggle
 Hotkey, *LWin, toggle
 Hotkey, *LWin up, toggle
+ChangeLanguage()
+return
+
+ChangeLanguage()
+{
 PostMessage, 0x50, 2, 0,, A ; 0x50 is WM_INPUTLANGCHANGEREQUEST
 return
+}
 
 !j::send {Down}
 !k::send {Up}
