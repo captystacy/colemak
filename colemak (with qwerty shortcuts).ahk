@@ -6,26 +6,37 @@ Menu, Tray, Icon, main.cpl, 8
 
 ;----------- REMAP TO COLEMARK
 
-e::f
-r::p
-t::g
-y::j
-u::l
-i::u
-o::y
-p::;
-s::r
-d::s
-f::t
-g::d
-h::h
-j::n
-k::e
-l::i
-SC027::o
-n::k
-
 Capslock::Backspace
+#if GetKeyboardLayout() = "0x4090409" ;eng layout
+	$e::f
+	$r::p
+	$t::g
+	$y::j
+	$u::l
+	$i::u
+	$o::y
+	$p::;
+	$s::r
+	$d::s
+	$f::t
+	$g::d
+	$h::h
+	$j::n
+	$k::e
+	$l::i
+	$;::o
+	$n::k
+;#if GetKeyboardLayout() = "0x4190419" ;rus layout
+#if
+
+GetKeyboardLayout() 
+{
+	SetFormat, Integer, H
+	languageCode := DllCall("GetKeyboardLayout", Int,DllCall("GetWindowThreadProcessId", int,WinActive("A"), Int,0))
+	SetFormat, Integer, D
+	Return languageCode
+}
+
 ;----------- RELEASE KEYS FROM REMAP WHEN MODIFIER DOWN
 
 *Ctrl::
@@ -64,46 +75,32 @@ SetKeyDelay -1
 Send {Blind}{LWin Up}
 return
 
-;----------- TOGGLE COLEMARK-QWERTY WITH RIGHT ALT KEY
+;----------- TOGGLE COLEMARK-QWERTY WITH HOME KEY
 
 *Home::
 Suspend, Permit
 Suspend, toggle
-Hotkey, *Ctrl, toggle
-Hotkey, *Ctrl up, toggle
-Hotkey, *LWin, toggle
-Hotkey, *LWin up, toggle
-Hotkey, *RWin, toggle
-Hotkey, *RWin up, toggle
 return
 
-;----------- SWITCHING TO NORMAL NATIVE WITH LALT & LSHIFT
+;----------- IT IS DONE TO DISABLE ALT AS AN INDEPENDENT KEY (ANNOYING ALT WHO IS ALWAYS FOCUS MAIN BAR AND SAVE HOTKEYS WITH ALT)
+
+LAlt::Return
 
 LAlt & LShift::
-Suspend, Permit
-Suspend, toggle
-Hotkey, *Ctrl, toggle
-Hotkey, *Ctrl up, toggle
-Hotkey, *LWin, toggle
-Hotkey, *LWin up, toggle
 ChangeLanguage()
 return
 
 LShift & LAlt::
-Suspend, Permit
-Suspend, toggle
-Hotkey, *Ctrl, toggle
-Hotkey, *Ctrl up, toggle
-Hotkey, *LWin, toggle
-Hotkey, *LWin up, toggle
 ChangeLanguage()
 return
 
 ChangeLanguage()
 {
 PostMessage, 0x50, 2, 0,, A ; 0x50 is WM_INPUTLANGCHANGEREQUEST
-return
+Return
 }
+
+;----------- ARROW MOVES WITH ALT DOWN
 
 !j::send {Down}
 !k::send {Up}
@@ -114,5 +111,4 @@ return
 !o::send ^{Right}
 
 !i::send +^{Left}
-
-LAlt::
+!p::send +^{Right}
