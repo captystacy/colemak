@@ -1,3 +1,5 @@
+Capslock::Backspace
+
 !о::send {Down}
 !л::send {Up}
 !р::send {Left}
