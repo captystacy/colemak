@@ -10,3 +10,5 @@ Capslock::Backspace
 
 !ш::send +^{Left}
 !з::send +^{Right}
+
+LAlt::
