@@ -65,6 +65,8 @@ map Ь M
 map Б <
 map Ю >
 map Ё /|
+map : ^
+map ; $
 imap оо <Esc>
 
 behave mswin
