@@ -71,6 +71,8 @@ imap оо <Esc>
 
 behave mswin
 imap nn <Esc>
+nnoremap N :m +1<CR>
+nnoremap E :m -2<CR>
 
 " Up/down/left/right {{{
     nnoremap h h
