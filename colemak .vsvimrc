@@ -1,3 +1,72 @@
+"Russian layout
+map й q
+map ц w
+map у f
+map к p
+map е g
+map н j
+map г l
+map ш u
+map щ y
+map з ;
+map х [
+map ъ ]
+map ф a
+map ы r
+map в s
+map а t
+map п d
+map р h
+map о n
+map л e
+map д i
+map ж o
+map э '
+map ё \
+map я z
+map ч x
+map с c
+map м v
+map и b
+map т k
+map ь m
+map б ,
+map ю .
+map Й Q
+map Ц W
+map У F
+map К P
+map Е G
+map Н J
+map Г L
+map Ш U
+map Щ Y
+map З :
+map Х {
+map Ъ }
+map Ф A
+map Ы R
+map В S
+map А T
+map П D
+map Р H
+map О N
+map Л E
+map Д I
+map Ж O
+map Э "
+map Я Z
+map Ч X
+map С C
+map М V
+map И B
+map Т K
+map Ь M
+map Б <
+map Ю >
+map Ё /|
+imap оо <Esc>
+
 behave mswin
 imap nn <Esc>
 
@@ -116,14 +185,6 @@ imap nn <Esc>
     " E.g. dip (delete inner paragraph) is now drp
     onoremap r i
 " }}}
-" Folds, etc. {{{
-"   nnoremap j z
-"   xnoremap j z
-"   nnoremap jn zj
-"   xnoremap jn zj
-"   nnoremap je zk
-"   xnoremap je zk
-" }}}
 " Overridden keys must be prefixed with g {{{
     nnoremap gX X
     xnoremap gX X
@@ -131,17 +192,6 @@ imap nn <Esc>
     xnoremap gK K
     nnoremap gL L
     xnoremap gL L
-" }}}
-" Window handling {{{
-    nnoremap <C-W>h <C-W>h
-    xnoremap <C-W>h <C-W>h
-    nnoremap <C-W>n <C-W>j
-    xnoremap <C-W>n <C-W>j
-    nnoremap <C-W>e <C-W>k
-    xnoremap <C-W>e <C-W>k
-    nnoremap <C-W>i <C-W>l
-    xnoremap <C-W>i <C-W>l
-" }}}
 
 "wrap
 nnoremap j i<CR><Esc>
@@ -152,3 +202,7 @@ nnoremap <TAB> >>
 nnoremap <S-TAB> <<
 vnoremap <TAB> >gv
 vnoremap <S-TAB> <gv
+
+"join lines without space
+"nnoremap J $Jx
+
