@@ -148,6 +148,10 @@ vnoremap E d-PV']
 nnoremap H :vsc View.NavigateBackward<CR>
 nnoremap I :vsc View.NavigateForward<CR>
 
+"go to implementation
+nnoremap gd :vsc Edit.GoToImplementation<CR>
+nnoremap еп :vsc Edit.GoToImplementation<CR>
+
 "Russian layout
 map й q
 map ц w
