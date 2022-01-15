@@ -109,4 +109,5 @@ return
 !i::send +^{Left}
 !p::send +^{Right}
 
+RAlt::CapsLock
 LAlt::
