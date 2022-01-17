@@ -1,6 +1,6 @@
 behave mswin
 nnoremap <F1> :
-imap ,, <Esc>
+imap nn <Esc>
 set timeoutlen=200
 
 " Up/down/left/right {{{
@@ -218,4 +218,4 @@ map Ю >
 map Ё /|
 map : ^
 map ; $
-imap йй <Esc>
+imap оо <Esc>
