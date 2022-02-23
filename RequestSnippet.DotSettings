@@ -25,9 +25,9 @@ public class $NAME$RequestHandler : OperationResultRequestHandlerBase&lt;$NAME$R
 	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=79549331E5611A4FA16E0B394E238FE7/Field/=NAME/@KeyIndexDefined">True</s:Boolean>
 	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=79549331E5611A4FA16E0B394E238FE7/Field/=NAME/Expression/@EntryValue">constant("")</s:String>
 	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=79549331E5611A4FA16E0B394E238FE7/Field/=NAME/Order/@EntryValue">0</s:Int64>
-	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=79549331E5611A4FA16E0B394E238FE7/Field/=PARAM/@KeyIndexDefined">True</s:Boolean>
-	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=79549331E5611A4FA16E0B394E238FE7/Field/=PARAM/Order/@EntryValue">1</s:Int64>
 	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=79549331E5611A4FA16E0B394E238FE7/Field/=INPUTTYPE/@KeyIndexDefined">True</s:Boolean>
-	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=79549331E5611A4FA16E0B394E238FE7/Field/=INPUTTYPE/Order/@EntryValue">2</s:Int64>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=79549331E5611A4FA16E0B394E238FE7/Field/=INPUTTYPE/Order/@EntryValue">1</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=79549331E5611A4FA16E0B394E238FE7/Field/=PARAM/@KeyIndexDefined">True</s:Boolean>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=79549331E5611A4FA16E0B394E238FE7/Field/=PARAM/Order/@EntryValue">2</s:Int64>
 	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=79549331E5611A4FA16E0B394E238FE7/Field/=OUTPUTTYPE/@KeyIndexDefined">True</s:Boolean>
 	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=79549331E5611A4FA16E0B394E238FE7/Field/=OUTPUTTYPE/Order/@EntryValue">3</s:Int64></wpf:ResourceDictionary>
