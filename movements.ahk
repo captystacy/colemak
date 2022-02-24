@@ -5,29 +5,29 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 Capslock::Backspace
 ; Arrows
-!о::send {Down}
-!л::send {Up}
-!р::send {Left}
-!д::send {Right}
+!л::send {Down}
+!д::send {Up}
+!о::send {Left}
+!ж::send {Right}
 
 ; Shift+Arrows
-!+о::send +{Down}
-!+л::send +{Up}
-!+р::send +{Left}
-!+д::send +{Right}
+!+л::send +{Down}
+!+д::send +{Up}
+!+о::send +{Left}
+!+ж::send +{Right}
 
 ; Ctrl+Left, Ctrl+Right
-!г::send ^{Left}
+!ш::send ^{Left}
 !щ::send ^{Right}
 
 ; Ctrl+Shift+Left, Ctrl+Shift+Right
-!+г::send ^+{Left}
+!+ш::send ^+{Left}
 !+щ::send ^+{Right}
 
 ; Home, End
-!ш::send {Home}
+!г::send {Home}
 !з::send {End}
 
 ; Shift+Home, Shift+End
-!+ш::send +{Home}
+!+г::send +{Home}
 !+з::send +{End}
