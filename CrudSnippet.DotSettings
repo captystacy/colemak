@@ -252,7 +252,7 @@ public class $Entity$MapperConfiguration : Profile&#xD;
 {&#xD;
 	public $Entity$MapperConfiguration()&#xD;
 	{&#xD;
-		CreateMap&lt;$Entity$CreateViewModel, Department&gt;()&#xD;
+		CreateMap&lt;$Entity$CreateViewModel, $Entity$&gt;()&#xD;
 			.ForAllMembers(x =&gt; x.Ignore());&#xD;
 &#xD;
 		CreateMap&lt;$Entity$, $Entity$ViewModel&gt;()&#xD;
