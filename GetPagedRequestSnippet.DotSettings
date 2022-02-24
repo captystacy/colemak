@@ -1,0 +1,65 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=5A8870BBD8070648A70A8E8BB819BA6D/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=5A8870BBD8070648A70A8E8BB819BA6D/Shortcut/@EntryValue">getpaged-request</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=5A8870BBD8070648A70A8E8BB819BA6D/Text/@EntryValue">public record Get$ENTITY$PagedRequest(int PageIndex, int PageSize, string? Search) : IRequest&lt;OperationResult&lt;IPagedList&lt;$ENTITY$ViewModel&gt;&gt;&gt;;&#xD;
+&#xD;
+public class Get$ENTITY$PagedRequestHandler : IRequestHandler&lt;Get$ENTITY$PagedRequest, OperationResult&lt;IPagedList&lt;$ENTITY$ViewModel&gt;&gt;&gt;&#xD;
+{&#xD;
+    private readonly IMapper _mapper;&#xD;
+    private readonly IUnitOfWork _unitOfWork;&#xD;
+&#xD;
+    public Get$ENTITY$PagedRequestHandler(IMapper mapper, IUnitOfWork unitOfWork)&#xD;
+    {&#xD;
+	    _mapper = mapper;&#xD;
+        _unitOfWork = unitOfWork;&#xD;
+    }&#xD;
+&#xD;
+    public async Task&lt;OperationResult&lt;IPagedList&lt;$ENTITY$ViewModel&gt;&gt;&gt; Handle(Get$ENTITY$PagedRequest request, CancellationToken cancellationToken)&#xD;
+    {&#xD;
+        var operation = OperationResult.CreateResult&lt;IPagedList&lt;$ENTITY$ViewModel&gt;&gt;();&#xD;
+        var predicate = GetPredicate(request.Search);&#xD;
+        var pagedList = await _unitOfWork.GetRepository&lt;$ENTITY$&gt;()&#xD;
+            .GetPagedListAsync(&#xD;
+                predicate,&#xD;
+                pageIndex: request.PageIndex,&#xD;
+                pageSize: request.PageSize,&#xD;
+                cancellationToken: cancellationToken);&#xD;
+&#xD;
+        if (pagedList.PageIndex &gt; pagedList.TotalPages)&#xD;
+        {&#xD;
+            pagedList = await _unitOfWork.GetRepository&lt;$ENTITY$&gt;()&#xD;
+                .GetPagedListAsync(&#xD;
+                    pageIndex: 0,&#xD;
+                    pageSize: request.PageSize, &#xD;
+                    cancellationToken: cancellationToken);&#xD;
+        }&#xD;
+&#xD;
+        operation.Result = _mapper.Map&lt;IPagedList&lt;$ENTITY$ViewModel&gt;&gt;(pagedList);&#xD;
+        return operation;&#xD;
+    }&#xD;
+&#xD;
+    private Expression&lt;Func&lt;$ENTITY$, bool&gt;&gt; GetPredicate(string? search)&#xD;
+    {&#xD;
+        var predicate = PredicateBuilder.True&lt;$ENTITY$&gt;();&#xD;
+&#xD;
+        if (search is null)&#xD;
+        {&#xD;
+            return predicate;&#xD;
+        }&#xD;
+&#xD;
+        predicate.And(x =&gt; x.Name.Contains(search));&#xD;
+&#xD;
+        return predicate;&#xD;
+    }&#xD;
+}</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=5A8870BBD8070648A70A8E8BB819BA6D/Reformat/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=5A8870BBD8070648A70A8E8BB819BA6D/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=5A8870BBD8070648A70A8E8BB819BA6D/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=5A8870BBD8070648A70A8E8BB819BA6D/Scope/=B68999B9D6B43E47A02B22C12A54C3CC/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=5A8870BBD8070648A70A8E8BB819BA6D/Scope/=B68999B9D6B43E47A02B22C12A54C3CC/Type/@EntryValue">InCSharpTypeMember</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=5A8870BBD8070648A70A8E8BB819BA6D/Scope/=B68999B9D6B43E47A02B22C12A54C3CC/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=5A8870BBD8070648A70A8E8BB819BA6D/Scope/=558F05AA0DE96347816FF785232CFB2A/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=5A8870BBD8070648A70A8E8BB819BA6D/Scope/=558F05AA0DE96347816FF785232CFB2A/Type/@EntryValue">InCSharpTypeAndNamespace</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=5A8870BBD8070648A70A8E8BB819BA6D/Scope/=558F05AA0DE96347816FF785232CFB2A/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=5A8870BBD8070648A70A8E8BB819BA6D/Field/=ENTITY/@KeyIndexDefined">True</s:Boolean>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=5A8870BBD8070648A70A8E8BB819BA6D/Field/=ENTITY/Order/@EntryValue">0</s:Int64></wpf:ResourceDictionary>

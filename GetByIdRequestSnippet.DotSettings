@@ -1,0 +1,43 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=63BB25C84E30224097A752AD0D0FA4E7/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=63BB25C84E30224097A752AD0D0FA4E7/Shortcut/@EntryValue">getbyid-request</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=63BB25C84E30224097A752AD0D0FA4E7/Text/@EntryValue">public record Get$ENTITY$ByIdRequest(Guid Id) : IRequest&lt;OperationResult&lt;$ENTITY$ViewModel&gt;&gt;;&#xD;
+&#xD;
+public class Get$ENTITY$ByIdRequestHandler : IRequestHandler&lt;Get$ENTITY$ByIdRequest, OperationResult&lt;$ENTITY$ViewModel&gt;&gt;&#xD;
+{&#xD;
+    private readonly IMapper _mapper;&#xD;
+    private readonly IUnitOfWork _unitOfWork;&#xD;
+&#xD;
+    public Get$ENTITY$ByIdRequestHandler(IMapper mapper, IUnitOfWork unitOfWork)&#xD;
+    {&#xD;
+        _mapper = mapper;&#xD;
+        _unitOfWork = unitOfWork;&#xD;
+    }&#xD;
+&#xD;
+    public async Task&lt;OperationResult&lt;$ENTITY$ViewModel&gt;&gt; Handle(Get$ENTITY$ByIdRequest request, CancellationToken cancellationToken)&#xD;
+    {&#xD;
+        var operation = OperationResult.CreateResult&lt;$ENTITY$ViewModel&gt;();&#xD;
+        var entity = await _unitOfWork.GetRepository&lt;$ENTITY$&gt;().FindAsync(request.Id);&#xD;
+&#xD;
+        if (entity is null)&#xD;
+        {&#xD;
+            operation.AddError(new MicroserviceNotFoundException());&#xD;
+            return operation;&#xD;
+        }&#xD;
+&#xD;
+        var viewModel = _mapper.Map&lt;$ENTITY$ViewModel&gt;(entity);&#xD;
+        operation.Result = viewModel;&#xD;
+        return operation;&#xD;
+    }&#xD;
+}</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=63BB25C84E30224097A752AD0D0FA4E7/Reformat/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=63BB25C84E30224097A752AD0D0FA4E7/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=63BB25C84E30224097A752AD0D0FA4E7/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=63BB25C84E30224097A752AD0D0FA4E7/Scope/=B68999B9D6B43E47A02B22C12A54C3CC/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=63BB25C84E30224097A752AD0D0FA4E7/Scope/=B68999B9D6B43E47A02B22C12A54C3CC/Type/@EntryValue">InCSharpTypeMember</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=63BB25C84E30224097A752AD0D0FA4E7/Scope/=B68999B9D6B43E47A02B22C12A54C3CC/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=63BB25C84E30224097A752AD0D0FA4E7/Scope/=558F05AA0DE96347816FF785232CFB2A/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=63BB25C84E30224097A752AD0D0FA4E7/Scope/=558F05AA0DE96347816FF785232CFB2A/Type/@EntryValue">InCSharpTypeAndNamespace</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=63BB25C84E30224097A752AD0D0FA4E7/Scope/=558F05AA0DE96347816FF785232CFB2A/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=63BB25C84E30224097A752AD0D0FA4E7/Field/=ENTITY/@KeyIndexDefined">True</s:Boolean>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=63BB25C84E30224097A752AD0D0FA4E7/Field/=ENTITY/Order/@EntryValue">0</s:Int64></wpf:ResourceDictionary>
