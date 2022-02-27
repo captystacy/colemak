@@ -31,3 +31,7 @@ Capslock::Backspace
 ; Shift+Home, Shift+End
 !+г::send +{Home}
 !+з::send +{End}
+
+; Ctrl+Home, Ctrl+End
+!н::send ^{Home}
+!х::send ^{End}
