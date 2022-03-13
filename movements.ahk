@@ -3,35 +3,45 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
-Capslock::Backspace
+CapsLock::send {Backspace}
+
+; Ctrl+Backspace
+^CapsLock::send ^{Backspace}
+
+!CapsLock::send {Delete}
+
 ; Arrows
-!л::send {Down}
-!д::send {Up}
-!о::send {Left}
-!ж::send {Right}
+!SC025::send {Down}
+!SC026::send {Up}
+!SC024::send {Left}
+!SC027::send {Right}
 
 ; Shift+Arrows
-!+л::send +{Down}
-!+д::send +{Up}
-!+о::send +{Left}
-!+ж::send +{Right}
+!+SC025::send +{Down}
+!+SC026::send +{Up}
+!+SC024::send +{Left}
+!+SC027::send +{Right}
 
 ; Ctrl+Left, Ctrl+Right
-!ш::send ^{Left}
-!щ::send ^{Right}
+!SC017::send ^{Left}
+!SC018::send ^{Right}
 
 ; Ctrl+Shift+Left, Ctrl+Shift+Right
-!+ш::send ^+{Left}
-!+щ::send ^+{Right}
+!+SC017::send ^+{Left}
+!+SC018::send ^+{Right}
 
 ; Home, End
-!г::send {Home}
-!з::send {End}
+!SC016::send {Home}
+!SC019::send {End}
 
 ; Shift+Home, Shift+End
-!+г::send +{Home}
-!+з::send +{End}
+!+SC016::send +{Home}
+!+SC019::send +{End}
 
 ; Ctrl+Home, Ctrl+End
-!н::send ^{Home}
-!х::send ^{End}
+!SC015::send ^{Home}
+!SC01A::send ^{End}
+
+; Ctrl+Shift+Home, Ctrl+Shift+End
+!+SC015::send ^+{Home}
+!+SC01A::send ^+{End}
