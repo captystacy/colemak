@@ -3,45 +3,32 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
-CapsLock::send {Backspace}
+SetCapsLockState, AlwaysOff
 
-; Ctrl+Backspace
-^CapsLock::send ^{Backspace}
+*CapsLock::
+KeyWait, CapsLock
+IF A_ThisHotkey = *CapsLock
+	Send, {Backspace}
+Return
 
-!CapsLock::send {Delete}
+!CapsLock::Send {Delete}
 
-; Arrows
-!SC025::send {Down}
-!SC026::send {Up}
-!SC024::send {Left}
-!SC027::send {Right}
+$Space::SendInput, % GetKeyState("CapsLock", "P") ? return : "{Space}"
 
-; Shift+Arrows
-!+SC025::send +{Down}
-!+SC026::send +{Up}
-!+SC024::send +{Left}
-!+SC027::send +{Right}
+; Arrows, Shift+Arrows
+CapsLock & SC024::SendInput, % GetKeyState("Space", "P") ? "+{Left}" : "{Left}"
+CapsLock & SC025::SendInput, % GetKeyState("Space", "P") ? "+{Down}" : "{Down}"
+CapsLock & SC026::SendInput, % GetKeyState("Space", "P") ? "+{Up}" : "{Up}"
+CapsLock & SC027::SendInput, % GetKeyState("Space", "P") ? "+{Right}" : "{Right}"
 
-; Ctrl+Left, Ctrl+Right
-!SC017::send ^{Left}
-!SC018::send ^{Right}
+; Ctrl+Left, Ctrl+Right, Ctrl+Shift+Left, Ctrl+Shift+Right
+CapsLock & SC017::SendInput, % GetKeyState("Space", "P") ? "^+{Left}" : "^{Left}"
+CapsLock & SC018::SendInput, % GetKeyState("Space", "P") ? "^+{Right}" : "^{Right}"
 
-; Ctrl+Shift+Left, Ctrl+Shift+Right
-!+SC017::send ^+{Left}
-!+SC018::send ^+{Right}
+; Home, End, Shift+Home, Shift+End
+CapsLock & SC016::SendInput, % GetKeyState("Space", "P") ? "+{Home}" : "{Home}"
+CapsLock & SC019::SendInput, % GetKeyState("Space", "P") ? "+{End}" : "{End}"
 
-; Home, End
-!SC016::send {Home}
-!SC019::send {End}
-
-; Shift+Home, Shift+End
-!+SC016::send +{Home}
-!+SC019::send +{End}
-
-; Ctrl+Home, Ctrl+End
-!SC015::send ^{Home}
-!SC01A::send ^{End}
-
-; Ctrl+Shift+Home, Ctrl+Shift+End
-!+SC015::send ^+{Home}
-!+SC01A::send ^+{End}
+; Ctrl+Home, Ctrl+End, Ctrl+Shift+Home, Ctrl+Shift+End
+CapsLock & SC015::SendInput, % GetKeyState("Space", "P") ? "^+{Home}" : "^{Home}"
+CapsLock & SC01A::SendInput, % GetKeyState("Space", "P") ? "^+{End}" : "^{End}"
