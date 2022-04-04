@@ -8,10 +8,12 @@ SetCapsLockState, AlwaysOff
 *CapsLock::
 KeyWait, CapsLock
 IF A_ThisHotkey = *CapsLock
-	Send, {Backspace}
+	Send, {BackSpace}
 Return
 
 !CapsLock::Send {Delete}
+
+CapsLock & Enter::Send !{Enter}
 
 $Space::SendInput, % GetKeyState("CapsLock", "P") ? return : "{Space}"
 
