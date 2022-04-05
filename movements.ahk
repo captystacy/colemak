@@ -15,6 +15,8 @@ Return
 
 CapsLock & Enter::Send !{Enter}
 
+CapsLock & NumpadEnter::Send !{Enter}
+
 $Space::SendInput, % GetKeyState("CapsLock", "P") ? return : "{Space}"
 
 ; Arrows, Shift+Arrows
