@@ -5,7 +5,7 @@
 {&#xD;
     public $ENTITY$MapperConfiguration()&#xD;
     {&#xD;
-        CreateMap&lt;$ENTITY$CreateViewModel, Department&gt;();&#xD;
+        CreateMap&lt;$ENTITY$CreateViewModel, $ENTITY$&gt;();&#xD;
 &#xD;
         CreateMap&lt;$ENTITY$, $ENTITY$ViewModel&gt;();&#xD;
 &#xD;
@@ -19,6 +19,7 @@
 }</s:String>
 	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=5FC88371F031754884ED80B17B849666/Reformat/@EntryValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=5FC88371F031754884ED80B17B849666/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=5FC88371F031754884ED80B17B849666/Categories/=Imported_002012_002F26_002F2022/@EntryIndexedValue">Imported 12/26/2022</s:String>
 	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=5FC88371F031754884ED80B17B849666/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=5FC88371F031754884ED80B17B849666/Scope/=B68999B9D6B43E47A02B22C12A54C3CC/@KeyIndexDefined">True</s:Boolean>
 	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=5FC88371F031754884ED80B17B849666/Scope/=B68999B9D6B43E47A02B22C12A54C3CC/Type/@EntryValue">InCSharpTypeMember</s:String>
