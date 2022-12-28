@@ -97,6 +97,5 @@ CapsLock & SC01A::SendInput, % GetKeyState("Space", "P") ? "^+{End}" : "^{End}"
 $Space::SendInput, % GetKeyState("CapsLock", "P") ? return : "{Space}"
 
 ; Volume
-CapsLock & F1::Volume_Mute
-CapsLock & F2::Volume_Down
-CapsLock & F3::Volume_Up
+CapsLock & F1::Volume_Down
+CapsLock & F2::Volume_Up
