@@ -19,9 +19,6 @@ CapsLock & NumpadEnter::SendInput !{Enter}
 
 CapsLock & Insert::SendInput !{Insert}
 
-CapsLock & SC033::SendInput {PgDn}
-CapsLock & SC034::SendInput {PgUp}
-
 ; ctrl + q, ctrl + shift + q
 CapsLock & SC010::SendInput, % GetKeyState("Space", "P") ? "^+{SC010}" : "^{SC010}"
 
@@ -81,6 +78,12 @@ CapsLock & Tab::SendInput, % GetKeyState("Space", "P") ? "^+{Tab}" : "^{Tab}"
 
 ; ctrl + F4, ctrl + shift + F4
 CapsLock & F4::SendInput, % GetKeyState("Space", "P") ? "^+{F4}" : "^{F4}"
+
+; ctrl + ,, ctrl + shift + ,
+CapsLock & SC033::SendInput, % GetKeyState("Space", "P") ? "{PgDn}" : "^{Down}^{Down}^{Down}^{Down}^{Down}"
+
+; ctrl + ., ctrl + shift + .
+CapsLock & SC034::SendInput, % GetKeyState("Space", "P") ? "{PgUp}" : "^{Up}^{Up}^{Up}^{Up}^{Up}"
 
 ; Arrows, Shift+Arrows
 CapsLock & SC024::SendInput, % GetKeyState("Space", "P") ? "+{Left}" : "{Left}"
