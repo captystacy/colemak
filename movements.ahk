@@ -19,6 +19,9 @@ CapsLock & NumpadEnter::SendInput !{Enter}
 
 CapsLock & Insert::SendInput !{Insert}
 
+CapsLock & SC033::SendInput {PgDn}
+CapsLock & SC034::SendInput {PgUp}
+
 ; ctrl + q, ctrl + shift + q
 CapsLock & SC010::SendInput, % GetKeyState("Space", "P") ? "^+{SC010}" : "^{SC010}"
 
