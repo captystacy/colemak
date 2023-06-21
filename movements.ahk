@@ -88,6 +88,9 @@ CapsLock & SC034::SendInput, % GetKeyState("Space", "P") ? "{PgUp}" : "^{Up}^{Up
 ; ctrl + ', ctrl + shift + '
 CapsLock & SC028::SendInput, % GetKeyState("Space", "P") ? "^+{SC028}" : "^{SC02}"
 
+; ctrl + 0, ctrl + shift + 0
+CapsLock & SC00B::SendInput, % GetKeyState("Space", "P") ? "^+{SC00B}" : "^{SC00B}"
+
 ; Arrows, Shift+Arrows
 CapsLock & SC024::SendInput, % GetKeyState("Space", "P") ? "+{Left}" : "{Left}"
 CapsLock & SC025::SendInput, % GetKeyState("Space", "P") ? "+{Down}" : "{Down}"
