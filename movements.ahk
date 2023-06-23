@@ -70,6 +70,9 @@ CapsLock & SC030::SendInput, % GetKeyState("Space", "P") ? "^+{SC030}" : "^{SC03
 ; ctrl + k, ctrl + shift + k
 CapsLock & SC031::SendInput, % GetKeyState("Space", "P") ? "^+{SC031}" : "^{SC031}"
 
+; ctrl + m, ctrl + shift + m
+CapsLock & SC032::SendInput, % GetKeyState("Space", "P") ? "^+{SC032}" : GetKeyState("Alt", "P") ? "^!{SC032}" : "^{SC032}"
+
 ; ctrl + -, ctrl + shift + -
 CapsLock & SC00C::SendInput, % GetKeyState("Space", "P") ? "^+{SC00C}" : "^{SC00C}"
 
@@ -84,6 +87,9 @@ CapsLock & SC033::SendInput, % GetKeyState("Space", "P") ? "{PgDn}" : "^{Down}^{
 
 ; ctrl + ., ctrl + shift + .
 CapsLock & SC034::SendInput, % GetKeyState("Space", "P") ? "{PgUp}" : "^{Up}^{Up}^{Up}^{Up}^{Up}"
+
+; ctrl + /, ctrl + shift + /
+CapsLock & SC035::SendInput, % GetKeyState("Space", "P") ? "^+{SC035}" : GetKeyState("Alt", "P") ? "^!{SC035}" : "^{SC035}"
 
 ; ctrl + ', ctrl + shift + '
 CapsLock & SC028::SendInput, % GetKeyState("Space", "P") ? "^+{SC028}" : "^{SC02}"
@@ -106,8 +112,8 @@ CapsLock & SC016::SendInput, % GetKeyState("Space", "P") ? "+{Home}" : GetKeySta
 CapsLock & SC019::SendInput, % GetKeyState("Space", "P") ? "+{End}" : GetKeyState("Alt", "P") ? "^!{SC019}" : "{End}"
 
 ; Ctrl+Home, Ctrl+End, Ctrl+Shift+Home, Ctrl+Shift+End
-CapsLock & SC015::SendInput, % GetKeyState("Space", "P") ? "^+{Home}" : "^{Home}"
-CapsLock & SC01A::SendInput, % GetKeyState("Space", "P") ? "^+{End}" : "^{End}"
+CapsLock & SC015::SendInput, % GetKeyState("Space", "P") ? "^+{Home}" : GetKeyState("Alt", "P") ? "^!{SC015}" : "^{Home}"
+CapsLock & SC01A::SendInput, % GetKeyState("Space", "P") ? "^+{End}" : GetKeyState("Alt", "P") ? "^!{SC01A}" : "^{End}"
 
 $Space::SendInput, % GetKeyState("CapsLock", "P") ? return : "{Space}"
 
