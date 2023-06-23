@@ -102,8 +102,8 @@ CapsLock & SC017::SendInput, % GetKeyState("Space", "P") ? "^+{Left}" : "^{Left}
 CapsLock & SC018::SendInput, % GetKeyState("Space", "P") ? "^+{Right}" : "^{Right}"
 
 ; Home, End, Shift+Home, Shift+End
-CapsLock & SC016::SendInput, % GetKeyState("Space", "P") ? "+{Home}" : "{Home}"
-CapsLock & SC019::SendInput, % GetKeyState("Space", "P") ? "+{End}" : "{End}"
+CapsLock & SC016::SendInput, % GetKeyState("Space", "P") ? "+{Home}" : GetKeyState("Alt", "P") ? "^!{Home}" : "{Home}"
+CapsLock & SC019::SendInput, % GetKeyState("Space", "P") ? "+{End}" : GetKeyState("Alt", "P") ? "^!{End}" : "{End}"
 
 ; Ctrl+Home, Ctrl+End, Ctrl+Shift+Home, Ctrl+Shift+End
 CapsLock & SC015::SendInput, % GetKeyState("Space", "P") ? "^+{Home}" : "^{Home}"
