@@ -94,6 +94,9 @@ CapsLock & SC035::SendInput, % GetKeyState("Space", "P") ? "^+{SC035}" : GetKeyS
 ; ctrl + ', ctrl + shift + '
 CapsLock & SC028::SendInput, % GetKeyState("Space", "P") ? "^+{SC028}" : "^{SC02}"
 
+; ctrl + 9, ctrl + shift + 9
+CapsLock & SC00A::SendInput, % GetKeyState("Space", "P") ? "^+{SC00A}" : "^{SC00A}"
+
 ; ctrl + 0, ctrl + shift + 0
 CapsLock & SC00B::SendInput, % GetKeyState("Space", "P") ? "^+{SC00B}" : "^{SC00B}"
 
