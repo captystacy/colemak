@@ -20,7 +20,7 @@ CapsLock & NumpadEnter::SendInput !{Enter}
 CapsLock & Insert::SendInput !{Insert}
 
 ; ctrl + q, ctrl + shift + q
-CapsLock & SC010::SendInput, % GetKeyState("Space", "P") ? "^+{SC010}" : "^{SC010}"
+CapsLock & SC010::SendInput, % GetKeyState("Space", "P") ? "^+{SC010}" : "{SC001}"
 
 ; ctrl + w, ctrl + shift + w
 CapsLock & SC011::SendInput, % GetKeyState("Space", "P") ? "^+{SC011}" : "^{SC011}"
@@ -29,7 +29,7 @@ CapsLock & SC011::SendInput, % GetKeyState("Space", "P") ? "^+{SC011}" : "^{SC01
 CapsLock & SC012::SendInput, % GetKeyState("Space", "P") ? "^+{SC012}" : "^{SC012}"
 
 ; ctrl + p, ctrl + shift + p
-CapsLock & SC013::SendInput, % GetKeyState("Space", "P") ? "^+{SC013}" : "{SC001}"
+CapsLock & SC013::SendInput, % GetKeyState("Space", "P") ? "^+{SC013}" : "^{SC013}"
 
 ; ctrl + g, ctrl + shift + g
 CapsLock & SC014::SendInput, % GetKeyState("Space", "P") ? "^+{SC014}" : "^{SC014}"
