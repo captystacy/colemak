@@ -64,8 +64,8 @@ CapsLock & SC02E::SendInput, % GetKeyState("Space", "P") ? "^+{SC02E}" : "^{SC02
 ; ctrl + v, ctrl + shift + v
 CapsLock & SC02F::SendInput, % GetKeyState("Space", "P") ? "^+{SC02F}" : "^{SC02F}"
 
-; ctrl + b, ctrl + shift + b
-CapsLock & SC030::SendInput, % GetKeyState("Space", "P") ? "^+{SC030}" : "^{SC030}"
+; ctrl + b, ctrl + shift + b, ctrl + alt + b
+CapsLock & SC030::SendInput, % GetKeyState("Space", "P") ? "^+{SC030}" : GetKeyState("Alt", "P") ? "^!{SC030}" : "^{SC030}"
 
 ; ctrl + k, ctrl + shift + k
 CapsLock & SC031::SendInput, % GetKeyState("Space", "P") ? "^+{SC031}" : "^{SC031}"
