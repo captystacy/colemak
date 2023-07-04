@@ -29,7 +29,7 @@ CapsLock & SC011::SendInput, % GetKeyState("Space", "P") ? "^+{SC011}" : "^{SC01
 CapsLock & SC012::SendInput, % GetKeyState("Space", "P") ? "^+{SC012}" : "^{SC012}"
 
 ; ctrl + p, ctrl + shift + p
-CapsLock & SC013::SendInput, % GetKeyState("Space", "P") ? "^+{SC013}" : "^{SC013}"
+CapsLock & SC013::SendInput, % GetKeyState("Space", "P") ? "^+{SC013}" : "{SC001}"
 
 ; ctrl + g, ctrl + shift + g
 CapsLock & SC014::SendInput, % GetKeyState("Space", "P") ? "^+{SC014}" : "^{SC014}"
@@ -92,7 +92,10 @@ CapsLock & SC034::SendInput, % GetKeyState("Space", "P") ? "{PgUp}" : GetKeyStat
 CapsLock & SC035::SendInput, % GetKeyState("Space", "P") ? "^+{SC035}" : GetKeyState("Alt", "P") ? "^!{SC035}" : "^{SC035}"
 
 ; ctrl + ', ctrl + shift + '
-CapsLock & SC028::SendInput, % GetKeyState("Space", "P") ? "^+{SC028}" : "{SC001}"
+CapsLock & SC028::SendInput, % GetKeyState("Space", "P") ? "^+{SC028}" : "^{SC028}"
+
+; ctrl + `, ctrl + shift + `
+CapsLock & SC029::SendInput, % GetKeyState("Space", "P") ? "^+{SC029}" : "^{SC029}"
 
 ; ctrl + 7, ctrl + shift + 7
 CapsLock & SC008::SendInput, % GetKeyState("Space", "P") ? "^+{SC008}" : "^{SC008}"
