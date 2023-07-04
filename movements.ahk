@@ -83,16 +83,22 @@ CapsLock & Tab::SendInput, % GetKeyState("Space", "P") ? "^+{Tab}" : "^{Tab}"
 CapsLock & F4::SendInput, % GetKeyState("Space", "P") ? "^+{F4}" : "^{F4}"
 
 ; ctrl + ,, ctrl + shift + ,
-CapsLock & SC033::SendInput, % GetKeyState("Space", "P") ? "{PgDn}" : "^{Down}^{Down}^{Down}^{Down}^{Down}"
+CapsLock & SC033::SendInput, % GetKeyState("Space", "P") ? "{PgDn}" : GetKeyState("Alt", "P") ? "{Down}{Down}{Down}{Down}{Down}" : "^{Down}^{Down}^{Down}^{Down}^{Down}"
 
 ; ctrl + ., ctrl + shift + .
-CapsLock & SC034::SendInput, % GetKeyState("Space", "P") ? "{PgUp}" : "^{Up}^{Up}^{Up}^{Up}^{Up}"
+CapsLock & SC034::SendInput, % GetKeyState("Space", "P") ? "{PgUp}" : GetKeyState("Alt", "P") ? "{Up}{Up}{Up}{Up}{Up}" : "^{Up}^{Up}^{Up}^{Up}^{Up}"
 
 ; ctrl + /, ctrl + shift + /
 CapsLock & SC035::SendInput, % GetKeyState("Space", "P") ? "^+{SC035}" : GetKeyState("Alt", "P") ? "^!{SC035}" : "^{SC035}"
 
 ; ctrl + ', ctrl + shift + '
 CapsLock & SC028::SendInput, % GetKeyState("Space", "P") ? "^+{SC028}" : "^{SC02}"
+
+; ctrl + 7, ctrl + shift + 7
+CapsLock & SC008::SendInput, % GetKeyState("Space", "P") ? "^+{SC008}" : "^{SC008}"
+
+; ctrl + 8, ctrl + shift + 8
+CapsLock & SC009::SendInput, % GetKeyState("Space", "P") ? "^+{SC009}" : "^{SC009}"
 
 ; ctrl + 9, ctrl + shift + 9
 CapsLock & SC00A::SendInput, % GetKeyState("Space", "P") ? "^+{SC00A}" : "^{SC00A}"
