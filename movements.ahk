@@ -92,7 +92,7 @@ CapsLock & SC034::SendInput, % GetKeyState("Space", "P") ? "^{Up}^{Up}^{Up}^{Up}
 CapsLock & SC035::SendInput, % GetKeyState("Space", "P") ? "^+{SC035}" : GetKeyState("Alt", "P") ? "^!{SC035}" : "^{SC035}"
 
 ; ctrl + ', ctrl + shift + '
-CapsLock & SC028::SendInput, % GetKeyState("Space", "P") ? "^+{SC028}" : "^{SC028}"
+CapsLock & SC028::SendInput, % GetKeyState("Space", "P") ? "^+{SC028}" : "{AppsKey}"
 
 ; ctrl + `, ctrl + shift + `
 CapsLock & SC029::SendInput, % GetKeyState("Space", "P") ? "^+{SC029}" : "^{SC029}"
