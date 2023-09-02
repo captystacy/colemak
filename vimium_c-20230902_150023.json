@@ -1,13 +1,27 @@
 {
 	"name": "Vimium C",
-	"@time": "12/27/2022, 8:07:52 PM",
-	"time": 1672160872094,
+	"@time": "9/2/2023, 3:00:23 PM",
+	"time": 1693656023105,
 	"environment": {
-		"extension": "1.99.97",
+		"extension": "1.99.994",
 		"platform": "win",
-		"chromium": 108
+		"chromium": 116
 	},
 	"allBrowserUrls": true,
+	"exclusionRules": [
+		{
+			"passKeys": "",
+			"pattern": ":https://mail.google.com/"
+		},
+		{
+			"passKeys": "",
+			"pattern": ":https://shootr.azurewebsites.net/"
+		},
+		{
+			"passKeys": "",
+			"pattern": ":https://monkeytype.com/"
+		}
+	],
 	"keyLayout": 0,
 	"keyMappings": [
 		"#!no-check",
@@ -16,10 +30,10 @@
 		"map i scrollUp",
 		"map o scrollRight",
 		"",
-		"map u scrollPageDown",
-		"map y scrollPageUp",
-		"map U scrollToBottom",
-		"map Y scrollToTop",
+		"map , scrollPageDown",
+		"map . scrollPageUp",
+		"map < scrollToBottom",
+		"map > scrollToTop",
 		"",
 		"map E previousTab",
 		"map I nextTab",
@@ -78,9 +92,8 @@
 		"mapKey Б <",
 		"mapKey ю .",
 		"mapKey Ю >",
-		"# '.' and ',' overrides (disables this keys for mappings)",
-		"mapKey . / ",
-		"mapKey , ?",
+		"",
+		"mapKey / ?",
 		""
 	],
 	"linkHintCharacters": "rasneifwcm;dh",
