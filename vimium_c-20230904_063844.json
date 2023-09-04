@@ -1,7 +1,7 @@
 {
 	"name": "Vimium C",
-	"@time": "9/2/2023, 3:00:23 PM",
-	"time": 1693656023105,
+	"@time": "9/4/2023, 6:38:44 AM",
+	"time": 1693798724133,
 	"environment": {
 		"extension": "1.99.994",
 		"platform": "win",
@@ -42,6 +42,9 @@
 		"map O goForward",
 		"",
 		"map c copyCurrentUrl",
+		"",
+		"map w removeTab",
+		"map T restoreTab",
 		"",
 		"# russian",
 		"",

@@ -6,6 +6,8 @@ $Space::SendInput GetKeyState('CapsLock', 'P') ? '' : '{Space}'
 
 CapsLock::SendInput '{BackSpace}'
 
+; CapsLock::KeyWait('CapsLock'), SendInput(KeyWait('CapsLock', 'DT.3') ? '{Escape}' : '{BackSpace}')
+
 ^CapsLock::SendInput '^{BackSpace}'
 
 !CapsLock::SendInput '{Delete}'
