@@ -128,16 +128,3 @@ Capslock & . up::SendInput {Ctrl Up}{Z Up}
 
 ; Make Capslock+Space -> Enter
 Capslock & Space::SendInput {Enter Down}
-
-
-; Numpad using Ctrl+Shift+Alt + m,.neiluy or space
-+^!Space:: SendInput {Numpad0}
-+^!m:: SendInput {Numpad1}
-+^!,:: SendInput {Numpad2}
-+^!.:: SendInput {Numpad3}
-+^!n:: SendInput {Numpad4}
-+^!e:: SendInput {Numpad5}
-+^!i:: SendInput {Numpad6}
-+^!l:: SendInput {Numpad7}
-+^!u:: SendInput {Numpad8}
-+^!y:: SendInput {Numpad9}
