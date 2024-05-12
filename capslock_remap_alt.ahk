@@ -33,10 +33,6 @@
 ; - Does not need register remapping of AppsKey using SharpKeys.
 ; - Uses normal cursor key layout 
 ; - Added more hotkeys for insert, undo, redo etc.
-;
-; # Get the Linux Alt+Window Drag Functionality in Windows: http://www.howtogeek.com/howto/windows-vista/get-the-linux-altwindow-drag-functionality-in-windows/
-; Changes: The only change was using Capslock instead of Alt. This 
-; also removes problems in certain applications.
 
 
 
