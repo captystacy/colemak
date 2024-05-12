@@ -1,46 +1,5 @@
-; COLEMAK VERSION
-
-; Autohotkey Capslock Remapping Script 
-; Danik
-; More info at http://danikgames.com/blog/?p=714
-; danikgames.com
-; 
-; Functionality:
-; - Deactivates capslock for normal (accidental) use.
-; - Hold Capslock and drag anywhere in a window to move it (not just the title bar).
-; - Access the following functions when pressing Capslock: 
-;     Cursor keys           - N, E, I, U
-;     Enter                 - Space
-;     Home, PgDn, PgUp, End - L, Y, J, H
-;     Backspace and Del     - K, M
-;
-;     Insert                - B
-;     Select all            - A
-;     Cut, copy, paste      - R, S, F
-;     Close tab, window     - W, F
-;     Esc                   - P
-;     Next, previous tab    - Tab, Q
-;     Undo, redo            - , and .
-; - Numpad at the right hand resting position when holding Ctrl+Shift+Alt (using keys m,.neiluy and spacebar)
-;  
-; To use capslock as you normally would, you can press WinKey + Capslock
-
-
-; This script is mostly assembled from modified versions of the following awesome scripts:
-;
-; # Home Row Computing by Gustavo Duarte: http://duartes.org/gustavo/blog/post/home-row-computing for 
-; Changes: 
-; - Does not need register remapping of AppsKey using SharpKeys.
-; - Uses normal cursor key layout 
-; - Added more hotkeys for insert, undo, redo etc.
-
-
-
-
 #Persistent
 SetCapsLockState, AlwaysOff
-
-
 
 ; Capslock + neiu (left, down, up, right)
 
@@ -56,6 +15,8 @@ Capslock & u up::Send {Blind}{Up Up}
 Capslock & i::Send {Blind}{Right DownTemp}
 Capslock & i up::Send {Blind}{Right Up}
 
+; Capslock + o (context menu)
+Capslock & o::Send {AppsKey}
 
 ; Capslock + lyhj (pgdown, pgup, home, end)
 
@@ -94,7 +55,7 @@ Capslock & f::SendInput {Alt down}{F4}{Alt up}
 Capslock & p::SendInput {Blind}{Esc Down}
 
 
-; Capslock + km (insert, backspace, del)
+; Capslock + bkm (insert, backspace, del)
 
 Capslock & b::SendInput {Blind}{Insert Down}
 Capslock & m::SendInput {Blind}{Del Down}
