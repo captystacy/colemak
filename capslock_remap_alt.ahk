@@ -36,6 +36,10 @@ Capslock & SC019 up::SendInput {Blind}{End Up}
 
 Capslock & SC011::SendInput {Blind}{Esc Down}
 
+; Capslock + \ (insert)
+
+Capslock & SC056::SendInput {Blind}{Insert Down}
+
 ; Capslock + m, (backspace, del)
 
 Capslock & SC032::SendInput {Blind}{BS Down}
