@@ -36,12 +36,10 @@ Capslock & SC019 up::Send {Blind}{Right Up}
 
 Capslock & SC011::SendInput {Blind}{Esc Down}
 
-; Capslock + km, (insert, backspace, del)
+; Capslock + m, (backspace, del)
 
-Capslock & SC032::SendInput {Blind}{Ctrl Down}{BS Down}
-Capslock & SC032 up::SendInput {Blind}{Ctrl Up}{BS Up}
-Capslock & SC033::SendInput {Blind}{Ctrl Down}{Del Down}
-Capslock & SC033 up::SendInput {Blind}{Ctrl Up}{Del Up}
+Capslock & SC032::SendInput {Blind}{BS Down}
+Capslock & SC033::SendInput {Blind}{Del Down}
 
 ; Capslock + ./ (undo/redo)
 
