@@ -3,8 +3,8 @@ SetCapsLockState, AlwaysOff
 
 ; Capslock + neio (ctrl + left, down, up, ctrl + right)
 
-Capslock & SC024::SendInput {Blind}{Ctrl Down}{Left Down}
-Capslock & SC024 up::SendInput {Blind}{Ctrl Up}{Left Up}
+Capslock & SC024::Send {Blind}{Left Down}
+Capslock & SC024 up::Send {Blind}{Left Up}
 
 Capslock & SC025::Send {Blind}{Down DownTemp}
 Capslock & SC025 up::Send {Blind}{Down Up}
@@ -12,25 +12,25 @@ Capslock & SC025 up::Send {Blind}{Down Up}
 Capslock & SC026::Send {Blind}{Up DownTemp}
 Capslock & SC026 up::Send {Blind}{Up Up}
 
-Capslock & SC027::SendInput {Blind}{Ctrl Down}{Right Down}
-Capslock & SC027 up::SendInput {Blind}{Ctrl Up}{Right Up}
+Capslock & SC027::Send {Blind}{Right DownTemp}
+Capslock & SC027 up::Send {Blind}{Right Up}
 
 ; Capslock + ' (context menu)
 Capslock & SC028::Send {AppsKey}
 
 ; Capslock + luy; (left, home, end, right)
 
-Capslock & SC016::Send {Blind}{Left Down}
-Capslock & SC016 up::Send {Blind}{Left Up}
+Capslock & SC016::SendInput {Blind}{Home Down}
+Capslock & SC016 up::SendInput {Blind}{Home Up}
 
-Capslock & SC017::SendInput {Blind}{Home Down}
-Capslock & SC017 up::SendInput {Blind}{Home Up}
+Capslock & SC017::SendInput {Blind}{Ctrl Down}{Left Down}
+Capslock & SC017 up::SendInput {Blind}{Ctrl Up}{Left Up}
 
-Capslock & SC018::SendInput {Blind}{End Down}
-Capslock & SC018 up::SendInput {Blind}{End Up}
+Capslock & SC018::SendInput {Blind}{Ctrl Down}{Right Down}
+Capslock & SC018 up::SendInput {Blind}{Ctrl Up}{Right Up}
 
-Capslock & SC019::Send {Blind}{Right DownTemp}
-Capslock & SC019 up::Send {Blind}{Right Up}
+Capslock & SC019::SendInput {Blind}{End Down}
+Capslock & SC019 up::SendInput {Blind}{End Up}
 
 ; Capslock + w (esc)
 
