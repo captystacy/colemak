@@ -32,45 +32,38 @@ Capslock & SC018 up::SendInput {Blind}{Ctrl Up}{Right Up}
 Capslock & SC019::SendInput {Blind}{End Down}
 Capslock & SC019 up::SendInput {Blind}{End Up}
 
-; Capslock + w (esc)
+; Capslock + q (esc)
 
-Capslock & SC011::SendInput {Blind}{Esc Down}
+Capslock & SC010::SendInput {Blind}{Esc Down}
 
-; Capslock + \ (insert)
+; \ as backspace, alt + \ as delete
 
-Capslock & SC056::SendInput {Blind}{Insert Down}
-
-; Capslock + m, (backspace, del)
-
-Capslock & SC032::SendInput {Blind}{BS Down}
-Capslock & SC033::SendInput {Blind}{Del Down}
-
-; Capslock + ./ (undo/redo)
-
-Capslock & SC034::SendInput {Ctrl Down}{SC02C Down}
-Capslock & SC034 up::SendInput {Ctrl Up}{SC02C Up}
-Capslock & SC035::SendInput {Ctrl Down}{Shift Down}{SC02C Down}
-Capslock & SC035 up::SendInput {Ctrl Up}{Shift Up}{SC02C Up}
-
-; Make Capslock & Enter equivalent to Control+Enter
-Capslock & Enter::SendInput {Ctrl down}{Enter}{Ctrl up}
-
-; Make Capslock+Space -> Enter
-Capslock & Space::SendInput {Enter Down}
+SC056::SendInput {Blind}{BS Down}
+Ctrl & SC056::SendInput {Blind}{Ctrl Down}{BS Down}
+Capslock & SC056::SendInput {Blind}{Del Down}
 
 ; Make Capslock & Alt Equivalent to Control+Alt
 !Capslock::SendInput {Ctrl down}{Alt Down}
 !Capslock up::SendInput {Ctrl up}{Alt up}
 
-; Capslock + TAB/q (prev/next tab)
+; Capslock + key == Ctrl + key
 
-Capslock & q::SendInput {Ctrl Down}{Tab Down}
-Capslock & q up::SendInput {Ctrl Up}{Tab Up}
+; Capslock + Enter
+Capslock & Enter::SendInput {Ctrl down}{Enter}{Ctrl up}
+
+; Capslock + Space
+Capslock & Space::SendInput {Ctrl Down}{Space Down}
+Capslock & Space up::SendInput {Ctrl Up}{Space Up}
+
+; Capslock + TAB
+
 Capslock & Tab::SendInput {Ctrl Down}{Shift Down}{Tab Down}
 Capslock & Tab up::SendInput {Ctrl Up}{Shift Up}{Tab Up}
 
-; Capslock + key == Ctrl + key
-; Capslock + fpgj
+; Capslock + wfpgj
+
+Capslock & SC011::SendInput {Blind}{Ctrl Down}{SC011 Down}
+Capslock & SC011 up::SendInput {Blind}{Ctrl Up}{SC011 Up}
 
 Capslock & SC012::SendInput {Blind}{Ctrl Down}{SC012 Down}
 Capslock & SC012 up::SendInput {Blind}{Ctrl Up}{SC012 Up}
