@@ -3,7 +3,7 @@ SetCapsLockState, AlwaysOff
 
 ; Capslock + neio (ctrl + left, down, up, ctrl + right)
 
-Capslock & SC024::Send {Blind}{Left Down}
+Capslock & SC024::Send {Blind}{Left DownTemp}
 Capslock & SC024 up::Send {Blind}{Left Up}
 
 Capslock & SC025::Send {Blind}{Down DownTemp}
@@ -16,6 +16,7 @@ Capslock & SC027::Send {Blind}{Right DownTemp}
 Capslock & SC027 up::Send {Blind}{Right Up}
 
 ; Capslock + ' (context menu)
+
 Capslock & SC028::Send {AppsKey}
 
 ; Capslock + luy; (left, home, end, right)
@@ -32,26 +33,40 @@ Capslock & SC018 up::SendInput {Blind}{Ctrl Up}{Right Up}
 Capslock & SC019::SendInput {Blind}{End Down}
 Capslock & SC019 up::SendInput {Blind}{End Up}
 
+; Capslock + ,.
+
+Capslock & SC033::SendInput {Blind}{Down}{Down}{Down}{Down}{Down}
+
+Capslock & SC034::SendInput {Blind}{Up}{Up}{Up}{Up}{Up}
+
 ; Capslock + q (esc)
 
 Capslock & SC010::SendInput {Blind}{Esc Down}
 
-; \ as backspace, alt + \ as delete
+; Capslock + key == Ctrl + key
 
-SC056::SendInput {Blind}{BS Down}
-Ctrl & SC056::SendInput {Blind}{Ctrl Down}{BS Down}
-Capslock & SC056::SendInput {Blind}{Del Down}
+; Capslock + Alt
 
-; Make Capslock & Alt Equivalent to Control+Alt
 !Capslock::SendInput {Ctrl down}{Alt Down}
 !Capslock up::SendInput {Ctrl up}{Alt up}
 
-; Capslock + key == Ctrl + key
+; Capslock + BS
+
+Capslock & BS::SendInput {Ctrl down}{BS down}
+Capslock & BS up::SendInput {Ctrl up}{BS up}
+
+; Capslock + Del
+
+Capslock & Del::SendInput {Ctrl down}{Del down}
+Capslock & Del up::SendInput {Ctrl up}{Del up}
 
 ; Capslock + Enter
-Capslock & Enter::SendInput {Ctrl down}{Enter}{Ctrl up}
+
+Capslock & Enter::SendInput {Ctrl down}{Enter Down}
+Capslock & Enter up::SendInput {Ctrl Up}{Enter Up}
 
 ; Capslock + Space
+
 Capslock & Space::SendInput {Ctrl Down}{Space Down}
 Capslock & Space up::SendInput {Ctrl Up}{Space Up}
 
@@ -60,7 +75,7 @@ Capslock & Space up::SendInput {Ctrl Up}{Space Up}
 Capslock & Tab::SendInput {Ctrl Down}{Shift Down}{Tab Down}
 Capslock & Tab up::SendInput {Ctrl Up}{Shift Up}{Tab Up}
 
-; Capslock + wfpgj
+; Capslock + wfpgj []
 
 Capslock & SC011::SendInput {Blind}{Ctrl Down}{SC011 Down}
 Capslock & SC011 up::SendInput {Blind}{Ctrl Up}{SC011 Up}
@@ -77,7 +92,13 @@ Capslock & SC014 up::SendInput {Blind}{Ctrl Up}{SC014 Up}
 Capslock & SC015::SendInput {Blind}{Ctrl Down}{SC015 Down}
 Capslock & SC015 up::SendInput {Blind}{Ctrl Up}{SC015 Up}
 
-; Capslock + arstdh
+Capslock & SC01A::SendInput {Blind}{Ctrl Down}{SC01A Down}
+Capslock & SC01A up::SendInput {Blind}{Ctrl Up}{SC01A Up}
+
+Capslock & SC01B::SendInput {Blind}{Ctrl Down}{SC01B Down}
+Capslock & SC01B up::SendInput {Blind}{Ctrl Up}{SC01B Up}
+
+; Capslock + arstdh \
 
 Capslock & SC01E::SendInput {Blind}{Ctrl Down}{SC01E Down}
 Capslock & SC01E up::SendInput {Blind}{Ctrl Up}{SC01E Up}
@@ -97,7 +118,10 @@ Capslock & SC022 up::SendInput {Blind}{Ctrl Up}{SC022 Up}
 Capslock & SC023::SendInput {Blind}{Ctrl Down}{SC023 Down}
 Capslock & SC023 up::SendInput {Blind}{Ctrl Up}{SC023 Up}
 
-; Capslock + zxcvbk
+Capslock & SC02B::SendInput {Blind}{Ctrl Down}{SC02B Down}
+Capslock & SC02B up::SendInput {Blind}{Ctrl Up}{SC02B Up}
+
+; Capslock + zxcvbkm /
 
 Capslock & SC02C::SendInput {Blind}{Ctrl Down}{SC02C Down}
 Capslock & SC02C up::SendInput {Blind}{Ctrl Up}{SC02C Up}
@@ -116,3 +140,9 @@ Capslock & SC030 up::SendInput {Blind}{Ctrl Up}{SC030 Up}
 
 Capslock & SC031::SendInput {Blind}{Ctrl Down}{SC031 Down}
 Capslock & SC031 up::SendInput {Blind}{Ctrl Up}{SC031 Up}
+
+Capslock & SC032::SendInput {Blind}{Ctrl Down}{SC032 Down}
+Capslock & SC032 up::SendInput {Blind}{Ctrl Up}{SC032 Up}
+
+Capslock & SC035::SendInput {Blind}{Ctrl Down}{SC035 Down}
+Capslock & SC035 up::SendInput {Blind}{Ctrl Up}{SC035 Up}
