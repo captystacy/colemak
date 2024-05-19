@@ -66,8 +66,8 @@ Capslock & Enter up::SendInput {Ctrl Up}{Enter Up}
 
 ; Capslock + Space
 
-Capslock & Space::SendInput {Ctrl Down}{Space Down}
-Capslock & Space up::SendInput {Ctrl Up}{Space Up}
+Capslock & Space::SendInput {Blind}{Ctrl Down}{Space Down}
+Capslock & Space up::SendInput {Blind}{Ctrl Up}{Space Up}
 
 ; Capslock + TAB
 
