@@ -33,10 +33,9 @@ Capslock & SC018 up::SendInput {Blind}{Ctrl Up}{Right Up}
 Capslock & SC019::SendInput {Blind}{End Down}
 Capslock & SC019 up::SendInput {Blind}{End Up}
 
-; Capslock + ,.
+; Capslock + ,. (5x down, 5x up)
 
 Capslock & SC033::SendInput {Blind}{Down}{Down}{Down}{Down}{Down}
-
 Capslock & SC034::SendInput {Blind}{Up}{Up}{Up}{Up}{Up}
 
 ; Capslock + q (esc)
