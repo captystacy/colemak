@@ -71,8 +71,8 @@ Capslock & Space up::SendInput {Blind}{Ctrl Up}{Space Up}
 
 ; Capslock + TAB
 
-Capslock & Tab::SendInput {Ctrl Down}{Shift Down}{Tab Down}
-Capslock & Tab up::SendInput {Ctrl Up}{Shift Up}{Tab Up}
+Capslock & Tab::SendInput {Blind}{Ctrl Down}{Tab Down}
+Capslock & Tab up::SendInput {Blind}{Ctrl Up}{Tab Up}
 
 ; Capslock + wfpbj []
 
