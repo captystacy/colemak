@@ -61,8 +61,8 @@ Capslock & Del up::SendInput {Ctrl up}{Del up}
 
 ; Capslock + Enter
 
-Capslock & Enter::SendInput {Ctrl down}{Enter Down}
-Capslock & Enter up::SendInput {Ctrl Up}{Enter Up}
+Capslock & Enter::SendInput {Blind}{Ctrl down}{Enter Down}
+Capslock & Enter up::SendInput {Blind}{Ctrl Up}{Enter Up}
 
 ; Capslock + Space
 
