@@ -51,6 +51,7 @@ map <leader>/ <Action>(CommentByLineComment)
 
 map <leader>\ <Action>(ToggleDistractionFreeMode)
 map <leader>b <Action>(BuildWholeSolutionAction)
+map <leader>B <Action>(CancelBuildAction)
 
 """ Default vim mappings --------------------
 
