@@ -1,150 +1,113 @@
 #Persistent
 SetCapsLockState, AlwaysOff
 
-; Capslock + neio (ctrl + left, DownTemp, up, ctrl + right)
+; Capslock + neio (ctrl + left, Down, up, ctrl + right)
 
-Capslock & SC024::Send {Blind}{Left DownTemp}
-Capslock & SC024 up::Send {Blind}{Left Up}{Ctrl Up}
+Capslock & SC024::SendInput {Blind}{Left}
 
-Capslock & SC025::Send {Blind}{Down DownTemp}
-Capslock & SC025 up::Send {Blind}{DownTemp Up}{Ctrl Up}
+Capslock & SC025::SendInput {Blind}{Down}
 
-Capslock & SC026::Send {Blind}{Up DownTemp}
-Capslock & SC026 up::Send {Blind}{Up Up}{Ctrl Up}
+Capslock & SC026::SendInput {Blind}{Up}
 
-Capslock & SC027::Send {Blind}{Right DownTemp}
-Capslock & SC027 up::Send {Blind}{Right Up}{Ctrl Up}
+Capslock & SC027::SendInput {Blind}{Right}
 
 ; Capslock + ' (context menu)
 
-Capslock & SC028::Send {AppsKey}{Ctrl up}
+Capslock & SC028::SendInput {AppsKey}
 
 ; Capslock + luy; (left, home, end, right)
 
-Capslock & SC016::SendInput {Blind}{Home DownTemp}
-Capslock & SC016 up::SendInput {Blind}{Ctrl Up}{Home Up}
+Capslock & SC016::SendInput {Blind}{Home}
 
-Capslock & SC017::SendInput {Blind}{Ctrl DownTemp}{Left DownTemp}
-Capslock & SC017 up::SendInput {Blind}{Ctrl Up}{Left Up}
+Capslock & SC017::SendInput {Blind}^{Left}
 
-Capslock & SC018::SendInput {Blind}{Ctrl DownTemp}{Right DownTemp}
-Capslock & SC018 up::SendInput {Blind}{Ctrl Up}{Right Up}
+Capslock & SC018::SendInput {Blind}^{Right}
 
-Capslock & SC019::SendInput {Blind}{End DownTemp}
-Capslock & SC019 up::SendInput {Blind}{Ctrl up}{End Up}
+Capslock & SC019::SendInput {Blind}{End}
 
-; Capslock + ,. (5x DownTemp, 5x up)
+; Capslock + ,. (5x Down, 5x up)
 
-Capslock & SC033::SendInput {Blind}{Down}{Down}{Down}{Down}{Down}{Ctrl up}
-Capslock & SC034::SendInput {Blind}{Up}{Up}{Up}{Up}{Up}{Ctrl up}
+Capslock & SC033::SendInput {Blind}{Down}{Down}{Down}{Down}{Down}
+Capslock & SC034::SendInput {Blind}{Up}{Up}{Up}{Up}{Up}
 
 ; Capslock + q (esc)
 
-Capslock & SC010::SendInput {Blind}{Esc DownTemp}{Ctrl up}
+Capslock & SC010::SendInput {Blind}{Esc}
 
 ; Capslock + key == Ctrl + key
 
 ; Capslock + Alt
 
-!Capslock::SendInput {Blind}{Ctrl DownTemp}{Alt DownTemp}
-!Capslock up::SendInput {Blind}{Ctrl up}{Alt up}
+!Capslock::SendInput {Blind}^{Alt}
 
 ; Capslock + BS
 
-Capslock & BS::SendInput {Blind}{Ctrl DownTemp}{BS DownTemp}
-Capslock & BS up::SendInput {Blind}{Ctrl up}{BS Up}
+Capslock & BS::SendInput {Blind}^{BS}
 
 ; Capslock + Del
 
-Capslock & Del::SendInput {Blind}{Ctrl DownTemp}{Del DownTemp}
-Capslock & Del up::SendInput {Blind}{Ctrl Up}{Del Up}
+Capslock & Del::SendInput {Blind}^{Del}
 
 ; Capslock + Enter
 
-Capslock & Enter::SendInput {Blind}{Ctrl DownTemp}{Enter DownTemp}
-Capslock & Enter up::SendInput {Blind}{Ctrl Up}{Enter Up}
+Capslock & Enter::SendInput {Blind}^{Enter}
 
 ; Capslock + Space
 
-Capslock & Space::SendInput {Blind}{Ctrl DownTemp}{Space DownTemp}
-Capslock & Space up::SendInput {Blind}{Ctrl Up}{Space Up}
+Capslock & Space::SendInput {Blind}^{Space}
 
 ; Capslock + TAB
 
-Capslock & Tab::SendInput {Blind}{Ctrl DownTemp}{Tab DownTemp}
-Capslock & Tab up::SendInput {Blind}{Ctrl Up}{Tab Up}
+Capslock & Tab::SendInput {Blind}^{Tab}
 
 ; Capslock + wfpbj []
 
-Capslock & SC011::SendInput {Blind}{Ctrl DownTemp}{SC011 DownTemp}
-Capslock & SC011 up::SendInput {Blind}{Ctrl Up}{SC011 Up}
+Capslock & SC011::SendInput {Blind}^{SC011}
 
-Capslock & SC012::SendInput {Blind}{Ctrl DownTemp}{SC012 DownTemp}
-Capslock & SC012 up::SendInput {Blind}{Ctrl Up}{SC012 Up}
+Capslock & SC012::SendInput {Blind}^{SC012}
 
-Capslock & SC013::SendInput {Blind}{Ctrl DownTemp}{SC013 DownTemp}
-Capslock & SC013 up::SendInput {Blind}{Ctrl Up}{SC013 Up}
+Capslock & SC013::SendInput {Blind}^{SC013}
 
-Capslock & SC014::SendInput {Blind}{Ctrl DownTemp}{SC014 DownTemp}
-Capslock & SC014 up::SendInput {Blind}{Ctrl Up}{SC014 Up}
+Capslock & SC014::SendInput {Blind}^{SC014}
 
-Capslock & SC015::SendInput {Blind}{Ctrl DownTemp}{SC015 DownTemp}
-Capslock & SC015 up::SendInput {Blind}{Ctrl Up}{SC015 Up}
+Capslock & SC015::SendInput {Blind}^{SC015}
 
-Capslock & SC01A::SendInput {Blind}{Ctrl DownTemp}{SC01A DownTemp}
-Capslock & SC01A up::SendInput {Blind}{Ctrl Up}{SC01A Up}
+Capslock & SC01A::SendInput {Blind}^{SC01A}
 
-Capslock & SC01B::SendInput {Blind}{Ctrl DownTemp}{SC01B DownTemp}
-Capslock & SC01B up::SendInput {Blind}{Ctrl Up}{SC01B Up}
+Capslock & SC01B::SendInput {Blind}^{SC01B}
 
 ; Capslock + arstgm #
 
-Capslock & SC01E::SendInput {Blind}{Ctrl DownTemp}{SC01E DownTemp}
-Capslock & SC01E up::SendInput {Blind}{Ctrl Up}{SC01E Up}
+Capslock & SC01E::SendInput {Blind}^{SC01E}
 
-Capslock & SC01F::SendInput {Blind}{Ctrl DownTemp}{SC01F DownTemp}
-Capslock & SC01F up::SendInput {Blind}{Ctrl Up}{SC01F Up}
+Capslock & SC01F::SendInput {Blind}^{SC01F}
 
-Capslock & SC020::SendInput {Blind}{Ctrl DownTemp}{SC020 DownTemp}
-Capslock & SC020 up::SendInput {Blind}{Ctrl Up}{SC020 Up}
+Capslock & SC020::SendInput {Blind}^{SC020}
 
-Capslock & SC021::SendInput {Blind}{Ctrl DownTemp}{SC021 DownTemp}
-Capslock & SC021 up::SendInput {Blind}{Ctrl Up}{SC021 Up}
+Capslock & SC021::SendInput {Blind}^{SC021}
 
-Capslock & SC022::SendInput {Blind}{Ctrl DownTemp}{SC022 DownTemp}
-Capslock & SC022 up::SendInput {Blind}{Ctrl Up}{SC022 Up}
+Capslock & SC022::SendInput {Blind}^{SC022}
 
-Capslock & SC023::SendInput {Blind}{Ctrl DownTemp}{SC023 DownTemp}
-Capslock & SC023 up::SendInput {Blind}{Ctrl Up}{SC023 Up}
+Capslock & SC023::SendInput {Blind}^{SC023}
 
-Capslock & SC02B::SendInput {Blind}{Ctrl DownTemp}{SC02B DownTemp}
-Capslock & SC02B up::SendInput {Blind}{Ctrl Up}{SC02B Up}
+Capslock & SC02B::SendInput {Blind}^{SC02B}
 
 ; Capslock + zxcdv\kh /
 
-Capslock & SC056::SendInput {Blind}{Ctrl DownTemp}{SC056 DownTemp}
-Capslock & SC056 up::SendInput {Blind}{Ctrl Up}{SC056 Up}
+Capslock & SC056::SendInput {Blind}^{SC056}
 
-Capslock & SC02C::SendInput {Blind}{Ctrl DownTemp}{SC02C DownTemp}
-Capslock & SC02C up::SendInput {Blind}{Ctrl Up}{SC02C Up}
+Capslock & SC02C::SendInput {Blind}^{SC02C}
 
-Capslock & SC02D::SendInput {Blind}{Ctrl DownTemp}{SC02D DownTemp}
-Capslock & SC02D up::SendInput {Blind}{Ctrl Up}{SC02D Up}
+Capslock & SC02D::SendInput {Blind}^{SC02D}
 
-Capslock & SC02E::SendInput {Blind}{Ctrl DownTemp}{SC02E DownTemp}
-Capslock & SC02E up::SendInput {Blind}{Ctrl Up}{SC02E Up}
+Capslock & SC02E::SendInput {Blind}^{SC02E}
 
-Capslock & SC02F::SendInput {Blind}{Ctrl DownTemp}{SC02F DownTemp}
-Capslock & SC02F up::SendInput {Blind}{Ctrl Up}{SC02F Up}
+Capslock & SC02F::SendInput {Blind}^{SC02F}
 
-Capslock & SC030::SendInput {Blind}{Ctrl DownTemp}{SC030 DownTemp}
-Capslock & SC030 up::SendInput {Blind}{Ctrl Up}{SC030 Up}
+Capslock & SC030::SendInput {Blind}^{SC030}
 
-Capslock & SC031::SendInput {Blind}{Ctrl DownTemp}{SC031 DownTemp}
-Capslock & SC031 up::SendInput {Blind}{Ctrl Up}{SC031 Up}
+Capslock & SC031::SendInput {Blind}^{SC031}
 
-Capslock & SC032::SendInput {Blind}{Ctrl DownTemp}{SC032 DownTemp}
-Capslock & SC032 up::SendInput {Blind}{Ctrl Up}{SC032 Up}
+Capslock & SC032::SendInput {Blind}^{SC032}
 
-Capslock & SC035::SendInput {Blind}{Ctrl DownTemp}{SC035 DownTemp}
-Capslock & SC035 up::SendInput {Blind}{Ctrl Up}{SC035 Up}
+Capslock & SC035::SendInput {Blind}^{SC035}
