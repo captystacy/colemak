@@ -7,8 +7,9 @@ let mapleader=" "
 
 """ Common settings -------------------------
 
-set so=5
 set relativenumber 
+set scrolloff=10
+set incsearch
 
 " shared clipboard
 set clipboard+=unnamed
@@ -18,9 +19,12 @@ set selectmode=key
 set keymodel+=startsel,stopsel,stopselect
 
 """ Mappings
+map <leader>w <Action>(CloseContent)
 map <leader>f <Action>(Find)
 map <leader>F <Action>(FindInPath)
 map <leader>p <Action>(GotoFile)
+map <leader>b <Action>(BuildWholeSolutionAction)
+map <leader>B <Action>(CancelBuildAction)
 
 map <leader>n <Action>(Back)
 map <leader>e <Action>(GotoDeclaration)
@@ -39,20 +43,21 @@ map <leader>a <Action>($SelectAll)
 map <leader>r <Action>(RenameElement)
 map <leader>s <Action>(SaveAll)
 map <leader>t <Action>(Generate)
+map <leader>mn <Action>(PrevSplitter)
+map <leader>me <Action>(SplitHorizontally)
+map <leader>mi <Action>(SplitVertically)
+map <leader>mo <Action>(NextSplitter)
 
 map <leader>z <Action>($Undo)
 map <leader>x <Action>(EditorCut)
 map <leader>c <Action>(EditorCopy)
-map <leader>v <Action>(EditorPaste)
 map <leader>d <Action>(EditorDuplicate)
+map <leader>v <Action>(EditorPaste)
+map <leader>\ <Action>(EditorSelectWord)
 map <leader>k <Action>(ShowHoverInfo)
 map <leader>h <Action>(Replace)
 map <leader>H <Action>(ReplaceInPath)
 map <leader>/ <Action>(CommentByLineComment)
-
-map <leader>\ <Action>(ToggleDistractionFreeMode)
-map <leader>b <Action>(BuildWholeSolutionAction)
-map <leader>B <Action>(CancelBuildAction)
 
 """ Default vim mappings --------------------
 
