@@ -15,7 +15,7 @@ set incsearch
 set clipboard+=unnamed
 
 " ctrl+shift+arrow enable
-set selectmode=key
+set selectmode=mouse,key,ideaselection
 set keymodel+=startsel,stopsel,stopselect
 
 """ Mappings
