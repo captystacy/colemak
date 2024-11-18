@@ -2,6 +2,11 @@
 let mapleader=" "
 
 """ Plugins  --------------------------------
+set surround
+unmap ys
+unmap yss
+map \s <Plug>YSurround
+map \ss <Plug>Yssurround
 
 """ Plugin settings -------------------------
 
