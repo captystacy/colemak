@@ -10,6 +10,8 @@ let mapleader=" "
 set relativenumber 
 set scrolloff=10
 set incsearch
+set visualbell
+set noerrorbells
 
 " shared clipboard
 set clipboard+=unnamed
