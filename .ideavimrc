@@ -12,7 +12,6 @@ map \ss <Plug>Yssurround
 
 """ Common settings -------------------------
 
-set relativenumber 
 set scrolloff=10
 set incsearch
 set visualbell
@@ -43,7 +42,7 @@ map <leader>l <Action>(ActivateProjectToolWindow)
 map <leader>u <Action>(ActivateTerminalToolWindow)
 map <leader>y <Action>(ActivateDatabaseToolWindow)
 map <leader>; <Action>(ActivateCommitToolWindow)
-map <leader>[ <Action>(ReSharperGotoPrevErrorInSolution)
+map <leader>[ <Action>(ActivateUnitTestsToolWindow)
 map <leader>] <Action>(ReSharperGotoNextErrorInSolution)
 
 map <leader>a <Action>($SelectAll)
