@@ -1,5 +1,53 @@
-"schemes": [
-            {
+{
+    "actions": [
+        {
+            "command": "find",
+            "keys": "ctrl+f"
+        },
+        {
+            "command": {
+                "action": "scrollDown"
+            },
+            "keys": "alt+down"
+        },
+        {
+            "command": {
+                "action": "newTab"
+            },
+            "keys": "ctrl+t"
+        },
+        {
+            "command": "closePane",
+            "keys": "ctrl+w"
+        },
+        {
+            "command": {
+                "action": "prevTab"
+            },
+            "keys": "alt+left"
+        },
+        {
+            "command": {
+                "action": "nextTab"
+            },
+            "keys": "alt+right"
+        },
+        {
+            "command": {
+                "action": "scrollUp"
+            },
+            "keys": "alt+up"
+        },
+        {
+            "command": {
+                "action": "copy",
+                "singleLine": false
+            },
+            "keys": "ctrl+c"
+        }
+    ],
+    "schemes": [
+        {
             "background": "#FAFAFA",
             "black": "#FFFFFF",
             "blue": "#61AFEF",
@@ -21,5 +69,6 @@
             "selectionBackground": "#CCCCCC",
             "white": "#808080",
             "yellow": "#E4C07A"
-        },
-],
+        }
+    ]
+}
