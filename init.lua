@@ -1,4 +1,5 @@
 vim.opt.background = "light"
+vim.opt.guicursor = "n-v-c:block,i:block,r-cr:hor20"
 
 local colemak = {}
 
