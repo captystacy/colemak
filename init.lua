@@ -152,3 +152,13 @@ function colemak.unapply()
 end
 
 colemak.apply();
+
+-- Delete unknown maps that interfere my life
+-- Ensure this runs after all plugins and initializations
+vim.api.nvim_create_autocmd("VimEnter", {
+    callback = function()
+      if vim.fn.maparg('a%', 'v') ~= '' then
+        vim.api.nvim_del_keymap('v', 'a%')
+      end
+    end,
+  })
