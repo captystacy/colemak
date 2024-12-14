@@ -181,3 +181,6 @@ xnoremap <C-w>o <C-w>l
 " Disable spawning empty buffer
 nnoremap <C-w><C-n> <nop>
 xnoremap <C-w><C-n> <nop>
+
+vnoremap <Tab> >gv
+vnoremap <S-Tab> <gv
